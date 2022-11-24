@@ -1,0 +1,1032 @@
+[2022-07-11 12:26:14] local.DEBUG: Please verify your Phone using code 902430  
+[2022-07-11 12:26:20] local.DEBUG: Mr. Saeed Your order is proceeded successfully.
+Expect a Call from the restaurant shortly.
+Order Number: 17790
+Total bill is: 88
+Thank You for using Sandwich Map.  
+[2022-07-11 12:26:21] local.DEBUG: Dear Partner You Have One New Order
+Customer name: Saeed
+Mobile Number: 0509275151
+Total Bill: 88
+Thank you for using Sandwich Map  
+[2022-07-11 12:26:33] local.ERROR: Failed to authenticate on SMTP server with username "noreply@sandwichmap.net" using 2 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code "535", with message "535 Incorrect authentication data
+". Authenticator PLAIN returned Expected response code 235 but got code "535", with message "535 Incorrect authentication data
+". {"exception":"[object] (Swift_TransportException(code: 0): Failed to authenticate on SMTP server with username \"noreply@sandwichmap.net\" using 2 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code \"535\", with message \"535 Incorrect authentication data
+\". Authenticator PLAIN returned Expected response code 235 but got code \"535\", with message \"535 Incorrect authentication data
+\". at /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/AuthHandler.php:191)
+[stacktrace]
+#0 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/EsmtpTransport.php(371): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#1 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php(148): Swift_Transport_EsmtpTransport->doHeloCommand()
+#2 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#3 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(521): Swift_Mailer->send(Object(Swift_Message), Array)
+#4 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(288): Illuminate\\Mail\\Mailer->sendSwiftMessage(Object(Swift_Message))
+#5 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/MailManager.php(550): Illuminate\\Mail\\Mailer->send('EmailTemplates....', Array, Object(Closure))
+#6 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Illuminate\\Mail\\MailManager->__call('send', Array)
+#7 /home/sandwichmap/public_html/app/Http/Controllers/API/HomePageController.php(460): Illuminate\\Support\\Facades\\Facade::__callStatic('send', Array)
+#8 /home/sandwichmap/public_html/app/Http/Controllers/API/HomePageController.php(860): App\\Http\\Controllers\\API\\HomePageController->sendEmail(Object(App\\Order))
+#9 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\API\\HomePageController->SendOrderEmail('17790')
+#10 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('SendOrderEmail', Array)
+#11 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(262): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\API\\HomePageController), 'SendOrderEmail')
+#12 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#13 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(695): Illuminate\\Routing\\Route->run()
+#14 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /home/sandwichmap/public_html/app/Http/Middleware/JsonMiddleware.php(20): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): App\\Http\\Middleware\\JsonMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(63): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#21 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), '60', '1')
+#22 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(697): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#24 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(672): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#25 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(636): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#26 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#27 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#28 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/sandwichmap/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#43 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#44 /home/sandwichmap/public_html/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#45 /home/sandwichmap/public_html/index.php(21): require_once('/home/sandwichm...')
+#46 {main}
+"} 
+[2022-07-11 13:04:39] local.DEBUG: Please verify your Phone using code 912459  
+[2022-07-11 13:04:56] local.DEBUG: Please verify your Phone using code 131585  
+[2022-07-11 13:05:06] local.DEBUG: Mr. Approved Out Side Your order is proceeded successfully.
+Expect a Call from the restaurant shortly.
+Order Number: 17791
+Total bill is: 16
+Thank You for using Sandwich Map.  
+[2022-07-11 13:05:07] local.DEBUG: Dear Partner You Have One New Order
+Customer name: Approved Out Side
+Mobile Number: 0566193651
+Total Bill: 16
+Thank you for using Sandwich Map  
+[2022-07-11 13:05:19] local.ERROR: Failed to authenticate on SMTP server with username "noreply@sandwichmap.net" using 2 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code "535", with message "535 Incorrect authentication data
+". Authenticator PLAIN returned Expected response code 235 but got code "535", with message "535 Incorrect authentication data
+". {"exception":"[object] (Swift_TransportException(code: 0): Failed to authenticate on SMTP server with username \"noreply@sandwichmap.net\" using 2 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code \"535\", with message \"535 Incorrect authentication data
+\". Authenticator PLAIN returned Expected response code 235 but got code \"535\", with message \"535 Incorrect authentication data
+\". at /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/AuthHandler.php:191)
+[stacktrace]
+#0 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/EsmtpTransport.php(371): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#1 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php(148): Swift_Transport_EsmtpTransport->doHeloCommand()
+#2 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#3 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(521): Swift_Mailer->send(Object(Swift_Message), Array)
+#4 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(288): Illuminate\\Mail\\Mailer->sendSwiftMessage(Object(Swift_Message))
+#5 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/MailManager.php(550): Illuminate\\Mail\\Mailer->send('EmailTemplates....', Array, Object(Closure))
+#6 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Illuminate\\Mail\\MailManager->__call('send', Array)
+#7 /home/sandwichmap/public_html/app/Http/Controllers/API/HomePageController.php(460): Illuminate\\Support\\Facades\\Facade::__callStatic('send', Array)
+#8 /home/sandwichmap/public_html/app/Http/Controllers/API/HomePageController.php(860): App\\Http\\Controllers\\API\\HomePageController->sendEmail(Object(App\\Order))
+#9 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\API\\HomePageController->SendOrderEmail('17791')
+#10 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('SendOrderEmail', Array)
+#11 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(262): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\API\\HomePageController), 'SendOrderEmail')
+#12 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#13 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(695): Illuminate\\Routing\\Route->run()
+#14 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /home/sandwichmap/public_html/app/Http/Middleware/JsonMiddleware.php(20): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): App\\Http\\Middleware\\JsonMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(63): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#21 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), '60', '1')
+#22 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(697): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#24 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(672): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#25 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(636): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#26 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#27 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#28 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/sandwichmap/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#43 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#44 /home/sandwichmap/public_html/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#45 /home/sandwichmap/public_html/index.php(21): require_once('/home/sandwichm...')
+#46 {main}
+"} 
+[2022-07-11 15:05:19] local.DEBUG: Please verify your Phone using code 810641  
+[2022-07-11 15:05:49] local.DEBUG: Mr. Ahmed Ali Your order is proceeded successfully.
+Expect a Call from the restaurant shortly.
+Order Number: 17792
+Total bill is: 173
+Thank You for using Sandwich Map.  
+[2022-07-11 15:05:50] local.DEBUG: Dear Partner You Have One New Order
+Customer name: Ahmed Ali
+Mobile Number: 0509294422
+Total Bill: 173
+Thank you for using Sandwich Map  
+[2022-07-11 15:06:02] local.ERROR: Failed to authenticate on SMTP server with username "noreply@sandwichmap.net" using 2 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code "535", with message "535 Incorrect authentication data
+". Authenticator PLAIN returned Expected response code 235 but got code "535", with message "535 Incorrect authentication data
+". {"exception":"[object] (Swift_TransportException(code: 0): Failed to authenticate on SMTP server with username \"noreply@sandwichmap.net\" using 2 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code \"535\", with message \"535 Incorrect authentication data
+\". Authenticator PLAIN returned Expected response code 235 but got code \"535\", with message \"535 Incorrect authentication data
+\". at /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/AuthHandler.php:191)
+[stacktrace]
+#0 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/EsmtpTransport.php(371): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#1 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php(148): Swift_Transport_EsmtpTransport->doHeloCommand()
+#2 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#3 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(521): Swift_Mailer->send(Object(Swift_Message), Array)
+#4 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(288): Illuminate\\Mail\\Mailer->sendSwiftMessage(Object(Swift_Message))
+#5 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/MailManager.php(550): Illuminate\\Mail\\Mailer->send('EmailTemplates....', Array, Object(Closure))
+#6 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Illuminate\\Mail\\MailManager->__call('send', Array)
+#7 /home/sandwichmap/public_html/app/Http/Controllers/API/HomePageController.php(460): Illuminate\\Support\\Facades\\Facade::__callStatic('send', Array)
+#8 /home/sandwichmap/public_html/app/Http/Controllers/API/HomePageController.php(860): App\\Http\\Controllers\\API\\HomePageController->sendEmail(Object(App\\Order))
+#9 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\API\\HomePageController->SendOrderEmail('17792')
+#10 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('SendOrderEmail', Array)
+#11 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(262): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\API\\HomePageController), 'SendOrderEmail')
+#12 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#13 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(695): Illuminate\\Routing\\Route->run()
+#14 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /home/sandwichmap/public_html/app/Http/Middleware/JsonMiddleware.php(20): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): App\\Http\\Middleware\\JsonMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(63): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#21 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), '60', '1')
+#22 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(697): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#24 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(672): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#25 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(636): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#26 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#27 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#28 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/sandwichmap/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#43 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#44 /home/sandwichmap/public_html/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#45 /home/sandwichmap/public_html/index.php(21): require_once('/home/sandwichm...')
+#46 {main}
+"} 
+[2022-07-11 16:34:52] local.DEBUG: 17792===24.197663811296668++++55.66073775219236  
+[2022-07-11 16:34:52] local.DEBUG: 17792===24.197663811296668++++55.66073775219236  
+[2022-07-11 16:34:52] local.DEBUG: 17792===24.197626942913498++++55.66058242347839  
+[2022-07-11 16:34:54] local.DEBUG: 17792===24.197632098979778++++55.66060619003873  
+[2022-07-11 16:34:54] local.DEBUG: 17792===24.197630059489885++++55.66059675001935  
+[2022-07-11 16:34:54] local.DEBUG: 17792===24.197606258269253++++55.6605856260271  
+[2022-07-11 16:35:00] local.DEBUG: 17792===24.19761670565167++++55.660564921395206  
+[2022-07-11 16:35:01] local.DEBUG: 17792===24.197622921678555++++55.66057560639589  
+[2022-07-11 16:35:03] local.DEBUG: 17792===24.197612563931973++++55.66058967941032  
+[2022-07-11 16:35:18] local.DEBUG: 17792===24.1976110697326++++55.66059160800866  
+[2022-07-11 16:35:33] local.DEBUG: 17792===24.197610618168824++++55.66059211586069  
+[2022-07-11 16:35:44] local.DEBUG: 17792===24.197610618144047++++55.66059211589068  
+[2022-07-11 16:35:44] local.DEBUG: 17792===24.197610618142182++++55.660592115892946  
+[2022-07-11 16:35:48] local.DEBUG: 17792===24.197610481978415++++55.660592269027475  
+[2022-07-11 16:35:58] local.DEBUG: 17792===24.197610481957465++++55.66059226905281  
+[2022-07-11 16:36:03] local.DEBUG: 17792===24.197610440904146++++55.66059231522172  
+[2022-07-11 16:36:13] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:13] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:14] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:15] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:16] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:18] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:19] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:19] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:20] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:21] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:23] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:24] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:25] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:26] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:27] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:28] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:29] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:30] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:31] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:32] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:33] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:34] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:35] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:36] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:37] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:38] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:39] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:40] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:41] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:42] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:43] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:44] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:45] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:46] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:47] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:48] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:49] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:50] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:51] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:52] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:53] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:54] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:55] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:56] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:57] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:58] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:36:59] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:00] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:01] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:02] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:03] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:04] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:05] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:06] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:07] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:08] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:09] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:10] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:11] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:12] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:13] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:14] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:15] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:16] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:17] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:18] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:19] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:20] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:21] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:22] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:23] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:24] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:25] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:26] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:27] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:28] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:29] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:30] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:31] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:47] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:48] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:49] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:50] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:51] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:52] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:53] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:54] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:55] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:56] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:57] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:58] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:37:59] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:00] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:01] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:02] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:03] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:04] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:05] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:06] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:07] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:08] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:09] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:10] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:11] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:12] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:13] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:14] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:15] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:16] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:17] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:18] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:19] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:20] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:21] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:22] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:23] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:24] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:25] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:26] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:27] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:28] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:29] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:30] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:31] local.DEBUG: 17792===24.197732087133915++++55.660523640500884  
+[2022-07-11 16:38:47] local.DEBUG: 17792===24.197647484569416++++55.66050358897471  
+[2022-07-11 16:38:48] local.DEBUG: 17792===24.197647484569416++++55.66050358897471  
+[2022-07-11 16:38:49] local.DEBUG: 17792===24.197647484569416++++55.66050358897471  
+[2022-07-11 16:38:50] local.DEBUG: 17792===24.197647484569416++++55.66050358897471  
+[2022-07-11 16:38:51] local.DEBUG: 17792===24.197647484569416++++55.66050358897471  
+[2022-07-11 16:38:52] local.DEBUG: 17792===24.197647484569416++++55.66050358897471  
+[2022-07-11 16:38:53] local.DEBUG: 17792===24.197647484569416++++55.66050358897471  
+[2022-07-11 16:38:54] local.DEBUG: 17792===24.197647484569416++++55.66050358897471  
+[2022-07-11 16:38:55] local.DEBUG: 17792===24.197647484569416++++55.66050358897471  
+[2022-07-11 16:38:56] local.DEBUG: 17792===24.19765008711114++++55.66051032292908  
+[2022-07-11 16:38:57] local.DEBUG: 17792===24.197654579847597++++55.660510337099225  
+[2022-07-11 16:38:58] local.DEBUG: 17792===24.19765388257528++++55.6605074274971  
+[2022-07-11 16:38:59] local.DEBUG: 17792===24.197650270286964++++55.660506266514446  
+[2022-07-11 16:39:00] local.DEBUG: 17792===24.197649176333456++++55.660515542121615  
+[2022-07-11 16:39:01] local.DEBUG: 17792===24.197642363898183++++55.66052447815826  
+[2022-07-11 16:39:02] local.DEBUG: 17792===24.19763904738766++++55.66053066453176  
+[2022-07-11 16:39:03] local.DEBUG: 17792===24.19763656699828++++55.66053728761167  
+[2022-07-11 16:39:04] local.DEBUG: 17792===24.197633798115774++++55.660541567716415  
+[2022-07-11 16:39:05] local.DEBUG: 17792===24.197631185790275++++55.66054190614382  
+[2022-07-11 16:39:06] local.DEBUG: 17792===24.197627516256517++++55.660544338603714  
+[2022-07-11 16:39:07] local.DEBUG: 17792===24.197645676552554++++55.66053248197183  
+[2022-07-11 16:39:08] local.DEBUG: 17792===24.197650759852763++++55.66052483282013  
+[2022-07-11 16:39:09] local.DEBUG: 17792===24.19768447015102++++55.660499567398546  
+[2022-07-11 16:39:10] local.DEBUG: 17792===24.19771847600117++++55.66047475487992  
+[2022-07-11 16:39:11] local.DEBUG: 17792===24.197752249984177++++55.66045845329861  
+[2022-07-11 16:39:12] local.DEBUG: 17792===24.19778086621328++++55.6604478598861  
+[2022-07-11 16:39:13] local.DEBUG: 17792===24.197801952610227++++55.660458254210255  
+[2022-07-11 16:39:14] local.DEBUG: 17792===24.19780798610418++++55.66045864791362  
+[2022-07-11 16:39:18] local.DEBUG: 17792===24.197846421857694++++55.660516954455666  
+[2022-07-11 16:39:23] local.DEBUG: 17792===24.197849471274186++++55.66052996001572  
+[2022-07-11 16:39:24] local.DEBUG: 17792===24.19782874717991++++55.66052779634665  
+[2022-07-11 16:39:25] local.DEBUG: 17792===24.197811064611795++++55.66052651971522  
+[2022-07-11 16:39:30] local.DEBUG: 17792===24.197798562006714++++55.66053432228313  
+[2022-07-11 16:39:33] local.DEBUG: 17792===24.197797247099647++++55.66053533901175  
+[2022-07-11 16:39:36] local.DEBUG: 17792===24.1977961768363++++55.66053391177145  
+[2022-07-11 16:39:38] local.DEBUG: 17792===24.197795668331555++++55.66053347537237  
+[2022-07-11 16:39:40] local.DEBUG: 17792===24.197795408242598++++55.66053317749177  
+[2022-07-11 16:39:40] local.DEBUG: 17792===24.197795177285723++++55.66053284324617  
+[2022-07-11 16:39:42] local.DEBUG: 17792===24.197794975846747++++55.66053241123587  
+[2022-07-11 16:39:42] local.DEBUG: 17792===24.19779516432718++++55.66053298350614  
+[2022-07-11 19:46:18] local.DEBUG: Please verify your Phone using code 787349  
+[2022-07-11 19:46:32] local.DEBUG: Mr. Shaima Your order is proceeded successfully.
+Expect a Call from the restaurant shortly.
+Order Number: 17797
+Total bill is: 78
+Thank You for using Sandwich Map.  
+[2022-07-11 19:46:33] local.DEBUG: Dear Partner You Have One New Order
+Customer name: Shaima
+Mobile Number: 0567754069
+Total Bill: 78
+Thank you for using Sandwich Map  
+[2022-07-11 19:46:46] local.ERROR: Failed to authenticate on SMTP server with username "noreply@sandwichmap.net" using 2 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code "535", with message "535 Incorrect authentication data
+". Authenticator PLAIN returned Expected response code 235 but got code "535", with message "535 Incorrect authentication data
+". {"exception":"[object] (Swift_TransportException(code: 0): Failed to authenticate on SMTP server with username \"noreply@sandwichmap.net\" using 2 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code \"535\", with message \"535 Incorrect authentication data
+\". Authenticator PLAIN returned Expected response code 235 but got code \"535\", with message \"535 Incorrect authentication data
+\". at /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/AuthHandler.php:191)
+[stacktrace]
+#0 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/EsmtpTransport.php(371): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#1 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php(148): Swift_Transport_EsmtpTransport->doHeloCommand()
+#2 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#3 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(521): Swift_Mailer->send(Object(Swift_Message), Array)
+#4 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(288): Illuminate\\Mail\\Mailer->sendSwiftMessage(Object(Swift_Message))
+#5 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/MailManager.php(550): Illuminate\\Mail\\Mailer->send('EmailTemplates....', Array, Object(Closure))
+#6 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Illuminate\\Mail\\MailManager->__call('send', Array)
+#7 /home/sandwichmap/public_html/app/Http/Controllers/API/HomePageController.php(460): Illuminate\\Support\\Facades\\Facade::__callStatic('send', Array)
+#8 /home/sandwichmap/public_html/app/Http/Controllers/API/HomePageController.php(860): App\\Http\\Controllers\\API\\HomePageController->sendEmail(Object(App\\Order))
+#9 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\API\\HomePageController->SendOrderEmail('17797')
+#10 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('SendOrderEmail', Array)
+#11 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(262): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\API\\HomePageController), 'SendOrderEmail')
+#12 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#13 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(695): Illuminate\\Routing\\Route->run()
+#14 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /home/sandwichmap/public_html/app/Http/Middleware/JsonMiddleware.php(20): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): App\\Http\\Middleware\\JsonMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(63): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#21 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), '60', '1')
+#22 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(697): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#24 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(672): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#25 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(636): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#26 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#27 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#28 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/sandwichmap/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#43 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#44 /home/sandwichmap/public_html/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#45 /home/sandwichmap/public_html/index.php(21): require_once('/home/sandwichm...')
+#46 {main}
+"} 
+[2022-07-11 20:00:33] local.DEBUG: 17797===24.197626650175838++++55.66075387091192  
+[2022-07-11 20:00:33] local.DEBUG: 17797===24.197626650175838++++55.66075387091192  
+[2022-07-11 20:00:33] local.DEBUG: 17797===24.197620073010814++++55.660750297289255  
+[2022-07-11 20:00:33] local.DEBUG: 17797===24.197849511884463++++55.66059929337882  
+[2022-07-11 20:00:34] local.DEBUG: 17797===24.197819157687846++++55.660575400279384  
+[2022-07-11 20:00:35] local.DEBUG: 17797===24.1978191576809++++55.66057540027938  
+[2022-07-11 20:00:36] local.DEBUG: 17797===24.1978191576809++++55.66057540027938  
+[2022-07-11 20:00:38] local.DEBUG: 17797===24.197809213048107++++55.66057864584672  
+[2022-07-11 20:00:39] local.DEBUG: 17797===24.197809213048107++++55.66057864584672  
+[2022-07-11 20:00:39] local.DEBUG: 17797===24.197812368881262++++55.66058344896293  
+[2022-07-11 20:00:40] local.DEBUG: 17797===24.197793902940912++++55.66059256025882  
+[2022-07-11 20:00:41] local.DEBUG: 17797===24.197782139114967++++55.66061141510576  
+[2022-07-11 20:00:42] local.DEBUG: 17797===24.197777412866774++++55.660599645162364  
+[2022-07-11 20:00:43] local.DEBUG: 17797===24.19777883449114++++55.6605945216744  
+[2022-07-11 20:00:44] local.DEBUG: 17797===24.19777883449114++++55.6605945216744  
+[2022-07-11 20:00:45] local.DEBUG: 17797===24.19777883449114++++55.6605945216744  
+[2022-07-11 20:00:46] local.DEBUG: 17797===24.19777883449114++++55.6605945216744  
+[2022-07-11 20:00:47] local.DEBUG: 17797===24.19777883449114++++55.6605945216744  
+[2022-07-11 20:00:48] local.DEBUG: 17797===24.19777883449114++++55.6605945216744  
+[2022-07-11 20:00:48] local.DEBUG: 17797===24.19777883449114++++55.6605945216744  
+[2022-07-11 20:00:49] local.DEBUG: 17797===24.19777883449114++++55.6605945216744  
+[2022-07-11 20:00:50] local.DEBUG: 17797===24.19777883449114++++55.6605945216744  
+[2022-07-11 20:00:51] local.DEBUG: 17797===24.19777883449114++++55.6605945216744  
+[2022-07-11 20:00:52] local.DEBUG: 17797===24.19777883449114++++55.6605945216744  
+[2022-07-11 20:00:53] local.DEBUG: 17797===24.19777883449114++++55.6605945216744  
+[2022-07-11 20:00:54] local.DEBUG: 17797===24.19777883449114++++55.6605945216744  
+[2022-07-11 20:00:55] local.DEBUG: 17797===24.19781993338377++++55.6605863359185  
+[2022-07-11 20:00:56] local.DEBUG: 17797===24.19781993338377++++55.6605863359185  
+[2022-07-11 20:00:57] local.DEBUG: 17797===24.19781993338377++++55.6605863359185  
+[2022-07-11 20:00:58] local.DEBUG: 17797===24.19781993338377++++55.6605863359185  
+[2022-07-11 20:00:59] local.DEBUG: 17797===24.19781993338377++++55.6605863359185  
+[2022-07-11 20:01:00] local.DEBUG: 17797===24.19781993338377++++55.6605863359185  
+[2022-07-11 20:01:01] local.DEBUG: 17797===24.197824708142104++++55.660581046509144  
+[2022-07-11 20:01:02] local.DEBUG: 17797===24.197822713644694++++55.66058008530913  
+[2022-07-11 20:01:03] local.DEBUG: 17797===24.19781217801327++++55.66057773524549  
+[2022-07-11 20:01:04] local.DEBUG: 17797===24.19781353560821++++55.66057563945119  
+[2022-07-11 20:01:05] local.DEBUG: 17797===24.1978118155158++++55.6605736187574  
+[2022-07-11 20:01:06] local.DEBUG: 17797===24.197812825189757++++55.66057755059954  
+[2022-07-11 20:01:08] local.DEBUG: 17797===24.19781777872839++++55.66058095914911  
+[2022-07-11 20:01:09] local.DEBUG: 17797===24.197832234523965++++55.660601658707954  
+[2022-07-11 20:01:10] local.DEBUG: 17797===24.197832261986168++++55.6606262691158  
+[2022-07-11 20:01:11] local.DEBUG: 17797===24.197804105032834++++55.66065453452973  
+[2022-07-11 20:01:12] local.DEBUG: 17797===24.19778258450545++++55.660685909395866  
+[2022-07-11 20:01:13] local.DEBUG: 17797===24.197777956929176++++55.66072647788614  
+[2022-07-11 20:01:14] local.DEBUG: 17797===24.197802401303072++++55.6607821998155  
+[2022-07-11 20:01:15] local.DEBUG: 17797===24.19783078071492++++55.66082385680616  
+[2022-07-11 20:01:16] local.DEBUG: 17797===24.19781028243022++++55.66057697774273  
+[2022-07-11 20:01:16] local.DEBUG: 17797===24.197855510505335++++55.660871806900396  
+[2022-07-11 20:01:17] local.DEBUG: 17797===24.19787779284614++++55.66093887037495  
+[2022-07-11 20:01:18] local.DEBUG: 17797===24.19793265763345++++55.66101290738863  
+[2022-07-11 20:01:19] local.DEBUG: 17797===24.19794805322309++++55.6610968492163  
+[2022-07-11 20:01:20] local.DEBUG: 17797===24.197975225567788++++55.66116299065291  
+[2022-07-11 20:01:21] local.DEBUG: 17797===24.19800662074331++++55.66123941107577  
+[2022-07-11 20:01:22] local.DEBUG: 17797===24.198057777515853++++55.66133245944353  
+[2022-07-11 20:01:23] local.DEBUG: 17797===24.19808245763517++++55.66142400909164  
+[2022-07-11 20:01:24] local.DEBUG: 17797===24.19814351857711++++55.661500696096695  
+[2022-07-11 20:01:25] local.DEBUG: 17797===24.198184084118413++++55.66158818131036  
+[2022-07-11 20:01:26] local.DEBUG: 17797===24.198225772190746++++55.661663787434065  
+[2022-07-11 20:01:27] local.DEBUG: 17797===24.198219005117608++++55.66175638551662  
+[2022-07-11 20:01:28] local.DEBUG: 17797===24.198252836319785++++55.6618387355828  
+[2022-07-11 20:01:29] local.DEBUG: 17797===24.1982828626176++++55.66191182394967  
+[2022-07-11 20:01:30] local.DEBUG: 17797===24.19831618751459++++55.661992941585645  
+[2022-07-11 20:01:31] local.DEBUG: 17797===24.19835431976954++++55.662069954744936  
+[2022-07-11 20:01:32] local.DEBUG: 17797===24.19838911739606++++55.66214651085456  
+[2022-07-11 20:01:47] local.DEBUG: 17797===24.198029756416++++55.66264495821499  
+[2022-07-11 20:01:48] local.DEBUG: 17797===24.19797278392645++++55.662672665460406  
+[2022-07-11 20:01:49] local.DEBUG: 17797===24.1979393198096++++55.66270292367367  
+[2022-07-11 20:01:50] local.DEBUG: 17797===24.19787272562961++++55.66270734409187  
+[2022-07-11 20:01:51] local.DEBUG: 17797===24.197796051544167++++55.66265633540256  
+[2022-07-11 20:01:52] local.DEBUG: 17797===24.197740552690625++++55.66253068472656  
+[2022-07-11 20:01:53] local.DEBUG: 17797===24.19768770392899++++55.6623648325704  
+[2022-07-11 20:01:54] local.DEBUG: 17797===24.197623432078533++++55.662224241742756  
+[2022-07-11 20:01:55] local.DEBUG: 17797===24.19755490921064++++55.662078221537925  
+[2022-07-11 20:01:56] local.DEBUG: 17797===24.197483637352104++++55.6619222682056  
+[2022-07-11 20:01:57] local.DEBUG: 17797===24.197407006598628++++55.6617597663078  
+[2022-07-11 20:01:58] local.DEBUG: 17797===24.197330068044533++++55.66159204069148  
+[2022-07-11 20:01:59] local.DEBUG: 17797===24.197255525053478++++55.66141365444154  
+[2022-07-11 20:02:00] local.DEBUG: 17797===24.197179588407685++++55.661224731575984  
+[2022-07-11 20:02:01] local.DEBUG: 17797===24.197100061873584++++55.66103710803013  
+[2022-07-11 20:02:02] local.DEBUG: 17797===24.197022696571885++++55.66083954143193  
+[2022-07-11 20:02:03] local.DEBUG: 17797===24.196936172648133++++55.66064032191086  
+[2022-07-11 20:02:04] local.DEBUG: 17797===24.196852022692116++++55.66044428593856  
+[2022-07-11 20:02:05] local.DEBUG: 17797===24.19677387065535++++55.66025058714499  
+[2022-07-11 20:02:06] local.DEBUG: 17797===24.19668307790172++++55.6600483728188  
+[2022-07-11 20:02:07] local.DEBUG: 17797===24.196594490785394++++55.65985259157425  
+[2022-07-11 20:02:08] local.DEBUG: 17797===24.1965138746847++++55.659647519196966  
+[2022-07-11 20:02:09] local.DEBUG: 17797===24.196424107660714++++55.65944208373396  
+[2022-07-11 20:02:10] local.DEBUG: 17797===24.19633661239683++++55.659240754753476  
+[2022-07-11 20:02:11] local.DEBUG: 17797===24.19624981831773++++55.65903259975738  
+[2022-07-11 20:02:12] local.DEBUG: 17797===24.19616467897773++++55.65883192942238  
+[2022-07-11 20:02:13] local.DEBUG: 17797===24.196085384153942++++55.658626451965404  
+[2022-07-11 20:02:14] local.DEBUG: 17797===24.19599880242997++++55.65843419746973  
+[2022-07-11 20:02:15] local.DEBUG: 17797===24.19591780636936++++55.65826039545615  
+[2022-07-11 20:02:16] local.DEBUG: 17797===24.195833413418118++++55.658103971893745  
+[2022-07-11 20:02:17] local.DEBUG: 17797===24.195752387484884++++55.65794328686972  
+[2022-07-11 20:02:18] local.DEBUG: 17797===24.195691854709214++++55.65777220022704  
+[2022-07-11 20:02:19] local.DEBUG: 17797===24.195617824486405++++55.657596977662905  
+[2022-07-11 20:02:20] local.DEBUG: 17797===24.19554561077161++++55.6574255498124  
+[2022-07-11 20:02:21] local.DEBUG: 17797===24.195479495495395++++55.65726774234671  
+[2022-07-11 20:02:22] local.DEBUG: 17797===24.195420337636563++++55.65712610468935  
+[2022-07-11 20:02:23] local.DEBUG: 17797===24.195377716707547++++55.65702053038117  
+[2022-07-11 20:02:24] local.DEBUG: 17797===24.1953421352079++++55.656910295427146  
+[2022-07-11 20:02:25] local.DEBUG: 17797===24.195312171792377++++55.6568415734057  
+[2022-07-11 20:02:26] local.DEBUG: 17797===24.19528572528309++++55.65677662760448  
+[2022-07-11 20:02:27] local.DEBUG: 17797===24.195262997955286++++55.656719570071374  
+[2022-07-11 20:02:28] local.DEBUG: 17797===24.195245209822502++++55.65667771589759  
+[2022-07-11 20:02:29] local.DEBUG: 17797===24.195237207861627++++55.65665768413913  
+[2022-07-11 20:02:30] local.DEBUG: 17797===24.19522847944567++++55.656652000402666  
+[2022-07-11 20:02:31] local.DEBUG: 17797===24.195225410489044++++55.656651077193914  
+[2022-07-11 20:02:32] local.DEBUG: 17797===24.195227969044687++++55.65666098872337  
+[2022-07-11 20:02:33] local.DEBUG: 17797===24.195224462224235++++55.65666459770668  
+[2022-07-11 20:02:47] local.DEBUG: 17797===24.19510279752767++++55.65637143578592  
+[2022-07-11 20:02:48] local.DEBUG: 17797===24.19510267732457++++55.656348387689555  
+[2022-07-11 20:02:49] local.DEBUG: 17797===24.195094517524478++++55.656328158354306  
+[2022-07-11 20:02:50] local.DEBUG: 17797===24.195083895642057++++55.656301825155765  
+[2022-07-11 20:02:51] local.DEBUG: 17797===24.19507481510379++++55.65627931317392  
+[2022-07-11 20:02:52] local.DEBUG: 17797===24.195064637153486++++55.656254080552856  
+[2022-07-11 20:02:53] local.DEBUG: 17797===24.19505140325985++++55.65621863427104  
+[2022-07-11 20:02:54] local.DEBUG: 17797===24.195035361085015++++55.65618624360027  
+[2022-07-11 20:02:55] local.DEBUG: 17797===24.19502384449008++++55.65616332054044  
+[2022-07-11 20:02:56] local.DEBUG: 17797===24.19501118309032++++55.65613815176484  
+[2022-07-11 20:02:57] local.DEBUG: 17797===24.19500490342354++++55.65612471068635  
+[2022-07-11 20:02:58] local.DEBUG: 17797===24.194998371702635++++55.65611329282812  
+[2022-07-11 20:02:59] local.DEBUG: 17797===24.194995317210065++++55.656109165113584  
+[2022-07-11 20:03:00] local.DEBUG: 17797===24.19499369210996++++55.6561078952534  
+[2022-07-11 20:03:01] local.DEBUG: 17797===24.19499434992672++++55.65611311168623  
+[2022-07-11 20:03:03] local.DEBUG: 17797===24.19499463677949++++55.65611470134232  
+[2022-07-11 20:03:03] local.DEBUG: 17797===24.195002024050694++++55.656099698835675  
+[2022-07-11 20:03:04] local.DEBUG: 17797===24.19499776208935++++55.65608224100815  
+[2022-07-11 20:03:05] local.DEBUG: 17797===24.194991836131813++++55.656060856156735  
+[2022-07-11 20:03:06] local.DEBUG: 17797===24.194985512906797++++55.65603803770038  
+[2022-07-11 20:03:07] local.DEBUG: 17797===24.19497767745618++++55.65600976211382  
+[2022-07-11 20:03:08] local.DEBUG: 17797===24.194967419060497++++55.6559727429037  
+[2022-07-11 20:03:09] local.DEBUG: 17797===24.194958453747066++++55.65594039000809  
+[2022-07-11 20:03:10] local.DEBUG: 17797===24.194968872985246++++55.655901783519  
+[2022-07-11 20:03:11] local.DEBUG: 17797===24.19496661455644++++55.655844163459385  
+[2022-07-11 20:03:12] local.DEBUG: 17797===24.194970424885312++++55.65578234784963  
+[2022-07-11 20:03:13] local.DEBUG: 17797===24.194959239552233++++55.6557212428205  
+[2022-07-11 20:03:14] local.DEBUG: 17797===24.194980506158416++++55.6556689613568  
+[2022-07-11 20:03:15] local.DEBUG: 17797===24.194998721835617++++55.6556159847388  
+[2022-07-11 20:03:16] local.DEBUG: 17797===24.195011498395814++++55.65556742597521  
+[2022-07-11 20:03:17] local.DEBUG: 17797===24.195008377203894++++55.65552133999024  
+[2022-07-11 20:03:18] local.DEBUG: 17797===24.19502090471976++++55.65548496696119  
+[2022-07-11 20:03:19] local.DEBUG: 17797===24.195028391903424++++55.65545829566297  
+[2022-07-11 20:03:20] local.DEBUG: 17797===24.19503511180337++++55.655439793642415  
+[2022-07-11 20:03:21] local.DEBUG: 17797===24.195037235869716++++55.65543926344582  
+[2022-07-11 20:03:23] local.DEBUG: 17797===24.195035688183655++++55.655440371572986  
+[2022-07-11 20:03:23] local.DEBUG: 17797===24.195033658030844++++55.65544463298948  
+[2022-07-11 20:03:24] local.DEBUG: 17797===24.195035779644325++++55.6554466373645  
+[2022-07-11 20:03:25] local.DEBUG: 17797===24.19503732053784++++55.655444452377374  
+[2022-07-11 20:03:26] local.DEBUG: 17797===24.195035714525545++++55.65544274104432  
+[2022-07-11 20:03:27] local.DEBUG: 17797===24.195046680985676++++55.655412442557896  
+[2022-07-11 20:03:28] local.DEBUG: 17797===24.195072225849863++++55.65534751694781  
+[2022-07-11 20:03:29] local.DEBUG: 17797===24.195110307365503++++55.65525861155025  
+[2022-07-11 20:03:30] local.DEBUG: 17797===24.19515813338737++++55.65516177051162  
+[2022-07-11 20:03:31] local.DEBUG: 17797===24.19523254877294++++55.65504700960465  
+[2022-07-11 20:03:32] local.DEBUG: 17797===24.195320859617887++++55.6549210928663  
+[2022-07-11 20:03:33] local.DEBUG: 17797===24.19537760639381++++55.65478653812444  
+[2022-07-11 20:03:34] local.DEBUG: 17797===24.195401266030995++++55.65463163658619  
+[2022-07-11 20:03:47] local.DEBUG: 17797===24.193961884002285++++55.65421118812735  
+[2022-07-11 20:03:48] local.DEBUG: 17797===24.193852077457397++++55.65435453785264  
+[2022-07-11 20:03:49] local.DEBUG: 17797===24.193766176494915++++55.6545323061876  
+[2022-07-11 20:03:50] local.DEBUG: 17797===24.193688639602996++++55.654707967072085  
+[2022-07-11 20:03:51] local.DEBUG: 17797===24.193615577484966++++55.65487614411594  
+[2022-07-11 20:03:53] local.DEBUG: 17797===24.19354001334011++++55.65501728563081  
+[2022-07-11 20:03:53] local.DEBUG: 17797===24.193453287479905++++55.655133264851095  
+[2022-07-11 20:03:54] local.DEBUG: 17797===24.19332787674475++++55.65523043114597  
+[2022-07-11 20:03:55] local.DEBUG: 17797===24.19317654966838++++55.65530602667831  
+[2022-07-11 20:03:56] local.DEBUG: 17797===24.193016447254443++++55.65538431861153  
+[2022-07-11 20:03:57] local.DEBUG: 17797===24.192847294997982++++55.65546150659375  
+[2022-07-11 20:03:58] local.DEBUG: 17797===24.192676066729565++++55.655543105275804  
+[2022-07-11 20:03:59] local.DEBUG: 17797===24.19250056679736++++55.65563667968831  
+[2022-07-11 20:04:00] local.DEBUG: 17797===24.192317992818445++++55.655726293049746  
+[2022-07-11 20:04:01] local.DEBUG: 17797===24.19213336470908++++55.6558159983031  
+[2022-07-11 20:04:02] local.DEBUG: 17797===24.19194621249091++++55.65590605028313  
+[2022-07-11 20:04:03] local.DEBUG: 17797===24.19176045003842++++55.655995139809285  
+[2022-07-11 20:04:04] local.DEBUG: 17797===24.191575816182226++++55.65608468327448  
+[2022-07-11 20:04:05] local.DEBUG: 17797===24.191391448844428++++55.65618141619087  
+[2022-07-11 20:04:06] local.DEBUG: 17797===24.191203605511955++++55.65627877435071  
+[2022-07-11 20:04:08] local.DEBUG: 17797===24.19101436730128++++55.65636930454245  
+[2022-07-11 20:04:08] local.DEBUG: 17797===24.190821079921687++++55.65645929853984  
+[2022-07-11 20:04:09] local.DEBUG: 17797===24.190632667815635++++55.6565528678629  
+[2022-07-11 20:04:10] local.DEBUG: 17797===24.190441964609583++++55.65664852749145  
+[2022-07-11 20:04:11] local.DEBUG: 17797===24.190248237553995++++55.65674501374148  
+[2022-07-11 20:04:12] local.DEBUG: 17797===24.190058542802404++++55.65684644236995  
+[2022-07-11 20:04:13] local.DEBUG: 17797===24.189864630556617++++55.656948464968906  
+[2022-07-11 20:04:14] local.DEBUG: 17797===24.189668897854197++++55.65704282046401  
+[2022-07-11 20:04:15] local.DEBUG: 17797===24.189475853062++++55.65713552913209  
+[2022-07-11 20:04:16] local.DEBUG: 17797===24.189279280065232++++55.65722689231902  
+[2022-07-11 20:04:17] local.DEBUG: 17797===24.18908696231341++++55.65732179942283  
+[2022-07-11 20:04:18] local.DEBUG: 17797===24.18889403889604++++55.657423259688  
+[2022-07-11 20:04:19] local.DEBUG: 17797===24.18870011593528++++55.65752261304906  
+[2022-07-11 20:04:20] local.DEBUG: 17797===24.188512889704807++++55.657620765449614  
+[2022-07-11 20:04:21] local.DEBUG: 17797===24.188319594676898++++55.65771215301193  
+[2022-07-11 20:04:23] local.DEBUG: 17797===24.188128043901234++++55.65780453306779  
+[2022-07-11 20:04:23] local.DEBUG: 17797===24.187932108899044++++55.657900141366156  
+[2022-07-11 20:04:24] local.DEBUG: 17797===24.187738922401678++++55.657998696009194  
+[2022-07-11 20:04:25] local.DEBUG: 17797===24.18754364447766++++55.6580968361281  
+[2022-07-11 20:04:26] local.DEBUG: 17797===24.187348248925947++++55.65819496655387  
+[2022-07-11 20:04:27] local.DEBUG: 17797===24.187154012412325++++55.65828967016977  
+[2022-07-11 20:04:28] local.DEBUG: 17797===24.186960556086618++++55.6583817712233  
+[2022-07-11 20:04:29] local.DEBUG: 17797===24.186769859063237++++55.65847739730569  
+[2022-07-11 20:04:30] local.DEBUG: 17797===24.18657911244921++++55.65857322277026  
+[2022-07-11 20:04:31] local.DEBUG: 17797===24.186388835592734++++55.65867466625299  
+[2022-07-11 20:04:47] local.DEBUG: 17797===24.18478344950769++++55.65959318954849  
+[2022-07-11 20:04:48] local.DEBUG: 17797===24.18484234462034++++55.65970413632838  
+[2022-07-11 20:04:49] local.DEBUG: 17797===24.184923560574667++++55.659796423182925  
+[2022-07-11 20:04:50] local.DEBUG: 17797===24.185019584792425++++55.65989322034054  
+[2022-07-11 20:04:51] local.DEBUG: 17797===24.18511043629899++++55.66000034147023  
+[2022-07-11 20:04:52] local.DEBUG: 17797===24.185189479646823++++55.660128424097145  
+[2022-07-11 20:04:53] local.DEBUG: 17797===24.185259991851634++++55.66027515953312  
+[2022-07-11 20:04:54] local.DEBUG: 17797===24.18532749313058++++55.66043324733033  
+[2022-07-11 20:04:55] local.DEBUG: 17797===24.185393903568567++++55.6605977121816  
+[2022-07-11 20:04:56] local.DEBUG: 17797===24.185458927587284++++55.66076443419858  
+[2022-07-11 20:04:57] local.DEBUG: 17797===24.185531272723587++++55.66093428540617  
+[2022-07-11 20:04:58] local.DEBUG: 17797===24.18559905485838++++55.661108557756826  
+[2022-07-11 20:04:59] local.DEBUG: 17797===24.18567100567255++++55.66128266264513  
+[2022-07-11 20:05:00] local.DEBUG: 17797===24.18573723787316++++55.661454947693  
+[2022-07-11 20:05:01] local.DEBUG: 17797===24.18580668241492++++55.66162830409322  
+[2022-07-11 20:05:02] local.DEBUG: 17797===24.185879424177077++++55.66180752060037  
+[2022-07-11 20:05:03] local.DEBUG: 17797===24.185956597052517++++55.66197513788679  
+[2022-07-11 20:05:04] local.DEBUG: 17797===24.186023028009316++++55.662153246289364  
+[2022-07-11 20:05:05] local.DEBUG: 17797===24.186088048050824++++55.66232862133198  
+[2022-07-11 20:05:06] local.DEBUG: 17797===24.186155113542814++++55.66249751056026  
+[2022-07-11 20:05:08] local.DEBUG: 17797===24.186221613360566++++55.66266720774021  
+[2022-07-11 20:05:08] local.DEBUG: 17797===24.18627921818801++++55.662834132978965  
+[2022-07-11 20:05:09] local.DEBUG: 17797===24.186343402461574++++55.66299748740455  
+[2022-07-11 20:05:10] local.DEBUG: 17797===24.186406730705244++++55.663160217171175  
+[2022-07-11 20:05:11] local.DEBUG: 17797===24.18646980743349++++55.663324996240476  
+[2022-07-11 20:05:12] local.DEBUG: 17797===24.186532213818165++++55.663490054454414  
+[2022-07-11 20:05:13] local.DEBUG: 17797===24.186593631997567++++55.66365870569532  
+[2022-07-11 20:05:14] local.DEBUG: 17797===24.186654191826054++++55.66382709172525  
+[2022-07-11 20:05:15] local.DEBUG: 17797===24.186719851490246++++55.66399176290209  
+[2022-07-11 20:05:16] local.DEBUG: 17797===24.186785273139318++++55.66415864938868  
+[2022-07-11 20:05:17] local.DEBUG: 17797===24.186852721739985++++55.66432507546043  
+[2022-07-11 20:05:18] local.DEBUG: 17797===24.186915973485075++++55.6644945419305  
+[2022-07-11 20:05:19] local.DEBUG: 17797===24.186996697115394++++55.66465337003596  
+[2022-07-11 20:05:20] local.DEBUG: 17797===24.18706185293049++++55.66481905289871  
+[2022-07-11 20:05:21] local.DEBUG: 17797===24.187126826304386++++55.66498274151924  
+[2022-07-11 20:05:22] local.DEBUG: 17797===24.18719129432704++++55.66514724282834  
+[2022-07-11 20:05:23] local.DEBUG: 17797===24.187256961598724++++55.6653137664518  
+[2022-07-11 20:05:24] local.DEBUG: 17797===24.187307156852718++++55.665488544936544  
+[2022-07-11 20:05:25] local.DEBUG: 17797===24.187388809454955++++55.66564956818569  
+[2022-07-11 20:05:26] local.DEBUG: 17797===24.187455462865632++++55.66581969143989  
+[2022-07-11 20:05:27] local.DEBUG: 17797===24.18752109751285++++55.66598682637077  
+[2022-07-11 20:05:28] local.DEBUG: 17797===24.187587670211588++++55.66615663083001  
+[2022-07-11 20:05:29] local.DEBUG: 17797===24.187652481429645++++55.66632053022936  
+[2022-07-11 20:05:30] local.DEBUG: 17797===24.18771901576023++++55.66649041257626  
+[2022-07-11 20:05:31] local.DEBUG: 17797===24.187784789685935++++55.66665623488878  
+[2022-07-11 20:05:47] local.DEBUG: 17797===24.188875624566716++++55.66943230146476  
+[2022-07-11 20:05:48] local.DEBUG: 17797===24.18894311721186++++55.66960694147646  
+[2022-07-11 20:05:49] local.DEBUG: 17797===24.189008836931517++++55.66977923299288  
+[2022-07-11 20:05:50] local.DEBUG: 17797===24.18907452581869++++55.66994864876048  
+[2022-07-11 20:05:51] local.DEBUG: 17797===24.189143176583404++++55.67012553115827  
+[2022-07-11 20:05:52] local.DEBUG: 17797===24.18921165232082++++55.67030289015593  
+[2022-07-11 20:05:53] local.DEBUG: 17797===24.18928097751009++++55.67048060755498  
+[2022-07-11 20:05:54] local.DEBUG: 17797===24.189349687850545++++55.6706586564727  
+[2022-07-11 20:05:55] local.DEBUG: 17797===24.18941650911891++++55.670832979972644  
+[2022-07-11 20:05:56] local.DEBUG: 17797===24.1894853284344++++55.67100972893075  
+[2022-07-11 20:05:57] local.DEBUG: 17797===24.189538069040253++++55.67119206757058  
+[2022-07-11 20:05:58] local.DEBUG: 17797===24.189606622865664++++55.67136717779888  
+[2022-07-11 20:05:59] local.DEBUG: 17797===24.18967648496107++++55.67154445682763  
+[2022-07-11 20:06:00] local.DEBUG: 17797===24.189744122995815++++55.671725034815346  
+[2022-07-11 20:06:01] local.DEBUG: 17797===24.189818611641762++++55.67189921577392  
+[2022-07-11 20:06:02] local.DEBUG: 17797===24.189880946759516++++55.67207907591717  
+[2022-07-11 20:06:03] local.DEBUG: 17797===24.189983729055918++++55.67224346633611  
+[2022-07-11 20:06:04] local.DEBUG: 17797===24.190052506525273++++55.67242132357077  
+[2022-07-11 20:06:05] local.DEBUG: 17797===24.19012122529581++++55.6725978689632  
+[2022-07-11 20:06:06] local.DEBUG: 17797===24.190190107291603++++55.67277262189923  
+[2022-07-11 20:06:08] local.DEBUG: 17797===24.190263388350534++++55.672948162137935  
+[2022-07-11 20:06:08] local.DEBUG: 17797===24.190334390436337++++55.67312082138251  
+[2022-07-11 20:06:09] local.DEBUG: 17797===24.19040749386857++++55.6732952315534  
+[2022-07-11 20:06:10] local.DEBUG: 17797===24.190474269970366++++55.67347150578215  
+[2022-07-11 20:06:11] local.DEBUG: 17797===24.19054263255366++++55.67364741297067  
+[2022-07-11 20:06:13] local.DEBUG: 17797===24.190611503540303++++55.67382117979872  
+[2022-07-11 20:06:13] local.DEBUG: 17797===24.190682871502194++++55.67399635934885  
+[2022-07-11 20:06:14] local.DEBUG: 17797===24.190751370680506++++55.67417057305409  
+[2022-07-11 20:06:15] local.DEBUG: 17797===24.190817766479817++++55.67434464566037  
+[2022-07-11 20:06:16] local.DEBUG: 17797===24.190879233750344++++55.6745181652569  
+[2022-07-11 20:06:17] local.DEBUG: 17797===24.19093821791129++++55.67468906365052  
+[2022-07-11 20:06:18] local.DEBUG: 17797===24.190998671501184++++55.674851034596685  
+[2022-07-11 20:06:19] local.DEBUG: 17797===24.191055434326326++++55.67500280717669  
+[2022-07-11 20:06:20] local.DEBUG: 17797===24.191106276438713++++55.675145550361094  
+[2022-07-11 20:06:21] local.DEBUG: 17797===24.19116045410565++++55.675285031301264  
+[2022-07-11 20:06:23] local.DEBUG: 17797===24.191212530997472++++55.6754211224261  
+[2022-07-11 20:06:23] local.DEBUG: 17797===24.191249098767372++++55.67555168657286  
+[2022-07-11 20:06:24] local.DEBUG: 17797===24.191268251876693++++55.675679454938084  
+[2022-07-11 20:06:25] local.DEBUG: 17797===24.191267752212852++++55.675806285508585  
+[2022-07-11 20:06:26] local.DEBUG: 17797===24.191245823530533++++55.675934866518716  
+[2022-07-11 20:06:28] local.DEBUG: 17797===24.191203424148686++++55.67605986446078  
+[2022-07-11 20:06:28] local.DEBUG: 17797===24.191137062884284++++55.676172912647516  
+[2022-07-11 20:06:29] local.DEBUG: 17797===24.191053228018298++++55.676281847235195  
+[2022-07-11 20:06:30] local.DEBUG: 17797===24.19094474461205++++55.67636688911617  
+[2022-07-11 20:06:31] local.DEBUG: 17797===24.190821901881687++++55.67643277212652  
+[2022-07-11 20:06:47] local.DEBUG: 17797===24.188715463138003++++55.67739115956518  
+[2022-07-11 20:06:48] local.DEBUG: 17797===24.188588835756917++++55.67745579389437  
+[2022-07-11 20:06:49] local.DEBUG: 17797===24.188460997055827++++55.67752254250576  
+[2022-07-11 20:06:50] local.DEBUG: 17797===24.188331712121542++++55.677588443369835  
+[2022-07-11 20:06:51] local.DEBUG: 17797===24.18820105479759++++55.67764255994426  
+[2022-07-11 20:06:53] local.DEBUG: 17797===24.1880687621645++++55.677701684274254  
+[2022-07-11 20:06:53] local.DEBUG: 17797===24.187936902668774++++55.67776384093274  
+[2022-07-11 20:06:54] local.DEBUG: 17797===24.18779994598155++++55.67782720845468  
+[2022-07-11 20:06:55] local.DEBUG: 17797===24.187669311054215++++55.677893393016596  
+[2022-07-11 20:06:56] local.DEBUG: 17797===24.187540088778274++++55.6779616539066  
+[2022-07-11 20:06:57] local.DEBUG: 17797===24.187410804313892++++55.67803005834575  
+[2022-07-11 20:06:58] local.DEBUG: 17797===24.187278091707743++++55.67809379888227  
+[2022-07-11 20:06:59] local.DEBUG: 17797===24.187142583208075++++55.67815754070123  
+[2022-07-11 20:07:00] local.DEBUG: 17797===24.187004833500897++++55.67821916469599  
+[2022-07-11 20:07:01] local.DEBUG: 17797===24.186869272297947++++55.67827682447624  
+[2022-07-11 20:07:02] local.DEBUG: 17797===24.186731396184186++++55.67833699555557  
+[2022-07-11 20:07:03] local.DEBUG: 17797===24.18659297174407++++55.678400652006836  
+[2022-07-11 20:07:04] local.DEBUG: 17797===24.186454791861966++++55.67846441396947  
+[2022-07-11 20:07:05] local.DEBUG: 17797===24.18632116040989++++55.67853061900977  
+[2022-07-11 20:07:06] local.DEBUG: 17797===24.186178636197948++++55.67859328987764  
+[2022-07-11 20:07:07] local.DEBUG: 17797===24.186041747900976++++55.67865899788697  
+[2022-07-11 20:07:08] local.DEBUG: 17797===24.185904620886742++++55.67872518971163  
+[2022-07-11 20:07:09] local.DEBUG: 17797===24.185770115540592++++55.67879202025691  
+[2022-07-11 20:07:10] local.DEBUG: 17797===24.18563969758466++++55.67885572762994  
+[2022-07-11 20:07:11] local.DEBUG: 17797===24.185521250493707++++55.67891905603214  
+[2022-07-11 20:07:13] local.DEBUG: 17797===24.18540639797708++++55.67897547650952  
+[2022-07-11 20:07:13] local.DEBUG: 17797===24.185300112371763++++55.67903298729517  
+[2022-07-11 20:07:14] local.DEBUG: 17797===24.185200153687177++++55.679076166565366  
+[2022-07-11 20:07:15] local.DEBUG: 17797===24.185106695331168++++55.67911261007588  
+[2022-07-11 20:07:16] local.DEBUG: 17797===24.185021425961022++++55.67913690578364  
+[2022-07-11 20:07:17] local.DEBUG: 17797===24.184936897599744++++55.679155459218435  
+[2022-07-11 20:07:18] local.DEBUG: 17797===24.18484132411714++++55.679159702316845  
+[2022-07-11 20:07:19] local.DEBUG: 17797===24.184736691776962++++55.67915284647339  
+[2022-07-11 20:07:20] local.DEBUG: 17797===24.1846265925627++++55.67915605029978  
+[2022-07-11 20:07:21] local.DEBUG: 17797===24.184521067525992++++55.67914566514971  
+[2022-07-11 20:07:22] local.DEBUG: 17797===24.184437723692923++++55.679219692815025  
+[2022-07-11 20:07:23] local.DEBUG: 17797===24.184363529701262++++55.679290185992365  
+[2022-07-11 20:07:24] local.DEBUG: 17797===24.184320474499547++++55.679389769619256  
+[2022-07-11 20:07:25] local.DEBUG: 17797===24.184311631499344++++55.67950259121831  
+[2022-07-11 20:07:26] local.DEBUG: 17797===24.18434225807861++++55.67961139819194  
+[2022-07-11 20:07:27] local.DEBUG: 17797===24.184399147897086++++55.67970146489978  
+[2022-07-11 20:07:28] local.DEBUG: 17797===24.18448464663365++++55.67975571125218  
+[2022-07-11 20:07:29] local.DEBUG: 17797===24.184573060088177++++55.679839945555464  
+[2022-07-11 20:07:30] local.DEBUG: 17797===24.184646857089398++++55.6799248905699  
+[2022-07-11 20:07:31] local.DEBUG: 17797===24.18471002989077++++55.680018257491774  
+[2022-07-11 20:07:47] local.DEBUG: 17797===24.185063546691886++++55.681275456466636  
+[2022-07-11 20:07:48] local.DEBUG: 17797===24.185035733959207++++55.681317377996635  
+[2022-07-11 20:07:49] local.DEBUG: 17797===24.18499517341106++++55.68135128995347  
+[2022-07-11 20:07:50] local.DEBUG: 17797===24.184997519587313++++55.68142101977815  
+[2022-07-11 20:07:51] local.DEBUG: 17797===24.18501991101038++++55.68150099582312  
+[2022-07-11 20:07:53] local.DEBUG: 17797===24.18505112714848++++55.68159247157548  
+[2022-07-11 20:07:54] local.DEBUG: 17797===24.185136409785873++++55.6818057794611  
+[2022-07-11 20:07:55] local.DEBUG: 17797===24.185186856353134++++55.68192707313896  
+[2022-07-11 20:07:56] local.DEBUG: 17797===24.185234417957446++++55.682044720385036  
+[2022-07-11 20:07:57] local.DEBUG: 17797===24.185281944166935++++55.682158516396036  
+[2022-07-11 20:07:58] local.DEBUG: 17797===24.185325565087883++++55.6822673018052  
+[2022-07-11 20:07:59] local.DEBUG: 17797===24.185367415737232++++55.682369957233625  
+[2022-07-11 20:08:00] local.DEBUG: 17797===24.185404337250798++++55.682467134473534  
+[2022-07-11 20:08:01] local.DEBUG: 17797===24.18544260879518++++55.68256343848133  
+[2022-07-11 20:08:03] local.DEBUG: 17797===24.185087941835743++++55.68169389649032  
+[2022-07-11 20:08:03] local.DEBUG: 17797===24.18551874546934++++55.682745772069296  
+[2022-07-11 20:08:04] local.DEBUG: 17797===24.18554874864445++++55.68283208549314  
+[2022-07-11 20:08:05] local.DEBUG: 17797===24.1855790804521++++55.68291679554756  
+[2022-07-11 20:08:06] local.DEBUG: 17797===24.185615008490924++++55.68300080116089  
+[2022-07-11 20:08:07] local.DEBUG: 17797===24.185483795960767++++55.682656114920064  
+[2022-07-11 20:08:07] local.DEBUG: 17797===24.185648568624615++++55.683083880619755  
+[2022-07-11 20:08:08] local.DEBUG: 17797===24.185675349136975++++55.683165735369194  
+[2022-07-11 20:08:09] local.DEBUG: 17797===24.185700035734296++++55.68324374685196  
+[2022-07-11 20:08:10] local.DEBUG: 17797===24.185720453627834++++55.68331537368726  
+[2022-07-11 20:08:11] local.DEBUG: 17797===24.185735032924843++++55.683372314375134  
+[2022-07-11 20:08:12] local.DEBUG: 17797===24.185740796194253++++55.68340652961111  
+[2022-07-11 20:08:13] local.DEBUG: 17797===24.185742784009257++++55.683428470344836  
+[2022-07-11 20:08:14] local.DEBUG: 17797===24.185743183037985++++55.683442434354056  
+[2022-07-11 20:08:15] local.DEBUG: 17797===24.185741428546017++++55.68343888039792  
+[2022-07-11 20:08:16] local.DEBUG: 17797===24.185741428448765++++55.683438824600366  
+[2022-07-11 20:08:17] local.DEBUG: 17797===24.185742297390625++++55.68343830586929  
+[2022-07-11 20:08:18] local.DEBUG: 17797===24.18574341618375++++55.683438146702954  
+[2022-07-11 20:08:19] local.DEBUG: 17797===24.185742242223565++++55.683437069092804  
+[2022-07-11 20:08:20] local.DEBUG: 17797===24.185742148669224++++55.68343664544369  
+[2022-07-11 20:08:21] local.DEBUG: 17797===24.18574283883139++++55.683436304632636  
+[2022-07-11 20:08:23] local.DEBUG: 17797===24.18574354771867++++55.68343576635734  
+[2022-07-11 20:08:24] local.DEBUG: 17797===24.185742495591917++++55.6834332073569  
+[2022-07-11 20:08:25] local.DEBUG: 17797===24.185743239879702++++55.68343553697655  
+[2022-07-11 20:08:25] local.DEBUG: 17797===24.185742694939822++++55.683431703277826  
+[2022-07-11 20:08:26] local.DEBUG: 17797===24.185743942854923++++55.68343159704439  
+[2022-07-11 20:08:27] local.DEBUG: 17797===24.185744581075163++++55.68343207078891  
+[2022-07-11 20:08:28] local.DEBUG: 17797===24.18574462978927++++55.6834329168598  
+[2022-07-11 20:08:29] local.DEBUG: 17797===24.185744101272668++++55.68343349187714  
+[2022-07-11 20:08:30] local.DEBUG: 17797===24.185742921974438++++55.68343415631884  
+[2022-07-11 20:08:31] local.DEBUG: 17797===24.185742165326523++++55.68343548927396  
+[2022-07-11 20:08:48] local.DEBUG: 17797===24.185700645634565++++55.683475644944096  
+[2022-07-11 20:08:48] local.DEBUG: 17797===24.18566202924606++++55.683488349051814  
+[2022-07-11 20:08:49] local.DEBUG: 17797===24.18563579060177++++55.683503845708216  
+[2022-07-11 20:08:50] local.DEBUG: 17797===24.185626764366685++++55.68351073893178  
+[2022-07-11 20:08:51] local.DEBUG: 17797===24.185625570588535++++55.68351258167568  
+[2022-07-11 20:08:53] local.DEBUG: 17797===24.185627192425756++++55.68351215283799  
+[2022-07-11 20:08:53] local.DEBUG: 17797===24.185626027821666++++55.68351507014737  
+[2022-07-11 20:08:54] local.DEBUG: 17797===24.185623608943605++++55.68351823919891  
+[2022-07-11 20:08:55] local.DEBUG: 17797===24.18562313240022++++55.68351874383737  
+[2022-07-11 20:08:56] local.DEBUG: 17797===24.18562313240022++++55.68351874383737  
+[2022-07-11 20:08:58] local.DEBUG: 17797===24.185621901289096++++55.683521996294516  
+[2022-07-11 20:08:58] local.DEBUG: 17797===24.185620360340494++++55.68352279825494  
+[2022-07-11 20:08:59] local.DEBUG: 17797===24.185619462139652++++55.68352485275194  
+[2022-07-11 20:09:00] local.DEBUG: 17797===24.185619000121427++++55.683523487640635  
+[2022-07-11 20:09:01] local.DEBUG: 17797===24.185614580823344++++55.68353075381061  
+[2022-07-11 20:09:02] local.DEBUG: 17797===24.185614718571255++++55.68353330624429  
+[2022-07-11 20:09:03] local.DEBUG: 17797===24.185608139896544++++55.68351779888427  
+[2022-07-11 20:09:04] local.DEBUG: 17797===24.185606269146405++++55.68351863784412  
+[2022-07-11 20:09:05] local.DEBUG: 17797===24.1856030682828++++55.683520073281386  
+[2022-07-11 20:09:06] local.DEBUG: 17797===24.185603443403423++++55.683519905058894  
+[2022-07-11 20:09:08] local.DEBUG: 17797===24.18560302376335++++55.683520093262665  
+[2022-07-11 20:09:08] local.DEBUG: 17797===24.185603023759835++++55.68352009325336  
+[2022-07-11 20:09:09] local.DEBUG: 17797===24.185603023761747++++55.68352009325842  
+[2022-07-11 20:09:10] local.DEBUG: 17797===24.18560302376002++++55.68352009325384  
+[2022-07-11 20:09:11] local.DEBUG: 17797===24.18560302376002++++55.68352009325384  
+[2022-07-11 20:09:12] local.DEBUG: 17797===24.18560302375916++++55.68352009325156  
+[2022-07-11 20:09:13] local.DEBUG: 17797===24.185603023754993++++55.683520093240524  
+[2022-07-11 20:09:14] local.DEBUG: 17797===24.185603023757977++++55.68352009324843  
+[2022-07-11 20:09:15] local.DEBUG: 17797===24.185603023757878++++55.68352009324817  
+[2022-07-11 20:09:16] local.DEBUG: 17797===24.185603023759032++++55.683520093251225  
+[2022-07-11 20:09:17] local.DEBUG: 17797===24.185603023761384++++55.683520093257464  
+[2022-07-11 20:09:18] local.DEBUG: 17797===24.185603023759096++++55.683520093251396  
+[2022-07-11 20:09:19] local.DEBUG: 17797===24.18560302375659++++55.68352009324476  
+[2022-07-11 20:09:21] local.DEBUG: 17797===24.18560302375659++++55.68352009324476  
+[2022-07-11 20:09:21] local.DEBUG: 17797===24.18560302375659++++55.68352009324476  
+[2022-07-11 20:09:23] local.DEBUG: 17797===24.18560302376118++++55.68352009325691  
+[2022-07-11 20:09:23] local.DEBUG: 17797===24.18560302376118++++55.68352009325691  
+[2022-07-11 20:09:24] local.DEBUG: 17797===24.18560302375953++++55.68352009325255  
+[2022-07-11 20:09:25] local.DEBUG: 17797===24.18560323106963++++55.68352000025436  
+[2022-07-11 20:09:26] local.DEBUG: 17797===24.185603230636154++++55.68352000047562  
+[2022-07-11 20:09:27] local.DEBUG: 17797===24.185603372356287++++55.68351993692133  
+[2022-07-11 20:09:28] local.DEBUG: 17797===24.18560337235618++++55.683519936921044  
+[2022-07-11 20:09:29] local.DEBUG: 17797===24.18560337235589++++55.68351993692028  
+[2022-07-11 20:09:30] local.DEBUG: 17797===24.185602891035156++++55.683520152761886  
+[2022-07-11 20:09:31] local.DEBUG: 17797===24.185603630336466++++55.683519821235535  
+[2022-07-11 20:09:47] local.DEBUG: 17797===24.185329060104824++++55.68363748354241  
+[2022-07-11 20:09:48] local.DEBUG: 17797===24.185328693651556++++55.6836391908311  
+[2022-07-11 20:09:49] local.DEBUG: 17797===24.18532879633485++++55.68363871239371  
+[2022-07-11 20:09:50] local.DEBUG: 17797===24.185328935774255++++55.68363806275619  
+[2022-07-11 20:09:51] local.DEBUG: 17797===24.185329107957024++++55.683637260566385  
+[2022-07-11 20:09:53] local.DEBUG: 17797===24.185329466422157++++55.68363559073885  
+[2022-07-11 20:09:53] local.DEBUG: 17797===24.18533012541521++++55.6836325204114  
+[2022-07-11 20:09:54] local.DEBUG: 17797===24.185330568399948++++55.68363045659598  
+[2022-07-11 20:09:55] local.DEBUG: 17797===24.18533106121671++++55.68362816065865  
+[2022-07-11 20:09:56] local.DEBUG: 17797===24.18533077470867++++55.68362949543525  
+[2022-07-11 20:09:57] local.DEBUG: 17797===24.185331104750734++++55.68362795782885  
+[2022-07-11 20:09:58] local.DEBUG: 17797===24.185331234053095++++55.683627355453346  
+[2022-07-11 20:09:59] local.DEBUG: 17797===24.185331036495448++++55.683628275857174  
+[2022-07-11 20:10:00] local.DEBUG: 17797===24.18533079102158++++55.683629419434226  
+[2022-07-11 20:10:01] local.DEBUG: 17797===24.18533079102209++++55.683629419434354  
+[2022-07-11 20:10:02] local.DEBUG: 17797===24.18533079102148++++55.6836294194342  
+[2022-07-11 20:10:03] local.DEBUG: 17797===24.185330791022242++++55.683629419434396  
+[2022-07-11 20:10:04] local.DEBUG: 17797===24.185330791026697++++55.683629419435526  
+[2022-07-11 20:10:05] local.DEBUG: 17797===24.18533079102094++++55.68362941943406  
+[2022-07-11 20:10:06] local.DEBUG: 17797===24.18533079103571++++55.68362941943783  
+[2022-07-11 20:10:08] local.DEBUG: 17797===24.185330791025507++++55.68362941943523  
+[2022-07-11 20:10:08] local.DEBUG: 17797===24.185330791031877++++55.68362941943685  
+[2022-07-11 20:10:09] local.DEBUG: 17797===24.185330791031127++++55.68362941943666  
+[2022-07-11 20:10:10] local.DEBUG: 17797===24.18533079102852++++55.683629419435995  
+[2022-07-11 20:10:11] local.DEBUG: 17797===24.185330791021702++++55.683629419434254  
+[2022-07-11 20:10:12] local.DEBUG: 17797===24.185330791027187++++55.683629419435654  
+[2022-07-11 20:10:13] local.DEBUG: 17797===24.185330791035973++++55.68362941943789  
+[2022-07-11 20:10:14] local.DEBUG: 17797===24.185330791020892++++55.68362941943405  
+[2022-07-11 20:10:15] local.DEBUG: 17797===24.18533079102499++++55.68362941943509  
+[2022-07-11 20:10:16] local.DEBUG: 17797===24.185330791023553++++55.68362941943472  
+[2022-07-11 20:10:18] local.DEBUG: 17797===24.185330791021734++++55.68362941943426  
+[2022-07-11 20:10:18] local.DEBUG: 17797===24.1853307910308++++55.68362941943658  
+[2022-07-11 20:10:19] local.DEBUG: 17797===24.185330791033707++++55.68362941943732  
+[2022-07-11 20:10:20] local.DEBUG: 17797===24.185330791022167++++55.683629419434375  
+[2022-07-11 20:10:21] local.DEBUG: 17797===24.18533079102171++++55.683629419434254  
+[2022-07-11 20:10:23] local.DEBUG: 17797===24.185330791022324++++55.68362941943441  
+[2022-07-11 20:10:23] local.DEBUG: 17797===24.185330791026075++++55.68362941943537  
+[2022-07-11 20:10:24] local.DEBUG: 17797===24.185330791032996++++55.68362941943714  
+[2022-07-11 20:10:25] local.DEBUG: 17797===24.185330791052742++++55.68362941944217  
+[2022-07-11 20:10:26] local.DEBUG: 17797===24.185330791028516++++55.683629419435995  
+[2022-07-11 20:10:27] local.DEBUG: 17797===24.185330791026402++++55.683629419435455  
+[2022-07-11 20:10:28] local.DEBUG: 17797===24.185330791026075++++55.68362941943537  
+[2022-07-11 20:10:29] local.DEBUG: 17797===24.18533079102222++++55.68362941943439  
+[2022-07-11 20:10:30] local.DEBUG: 17797===24.1853307910227++++55.68362941943451  
+[2022-07-11 20:10:31] local.DEBUG: 17797===24.185330791021073++++55.6836294194341  
+[2022-07-11 20:10:48] local.DEBUG: 17797===24.185330791027916++++55.68362941943584  
+[2022-07-11 20:10:48] local.DEBUG: 17797===24.185330791024178++++55.68362941943489  
+[2022-07-11 20:10:49] local.DEBUG: 17797===24.18533079103024++++55.683629419436436  
+[2022-07-11 20:10:50] local.DEBUG: 17797===24.185330791024587++++55.68362941943499  
+[2022-07-11 20:10:51] local.DEBUG: 17797===24.185330791022576++++55.683629419434475  
+[2022-07-11 20:10:53] local.DEBUG: 17797===24.185330791021023++++55.683629419434084  
+[2022-07-11 20:10:53] local.DEBUG: 17797===24.18533079103278++++55.68362941943708  
+[2022-07-11 20:10:54] local.DEBUG: 17797===24.185330791028925++++55.683629419436095  
+[2022-07-11 20:10:55] local.DEBUG: 17797===24.18533079104371++++55.68362941943987  
+[2022-07-11 20:10:56] local.DEBUG: 17797===24.18533079103582++++55.68362941943786  
+[2022-07-11 20:10:58] local.DEBUG: 17797===24.185330791033948++++55.68362941943738  
+[2022-07-11 20:10:58] local.DEBUG: 17797===24.185330791045164++++55.68362941944024  
+[2022-07-11 20:10:59] local.DEBUG: 17797===24.18533079104663++++55.683629419440614  
+[2022-07-11 20:11:00] local.DEBUG: 17797===24.1853307910237++++55.683629419434766  
+[2022-07-11 20:11:01] local.DEBUG: 17797===24.18533079102198++++55.683629419434325  
+[2022-07-11 20:11:02] local.DEBUG: 17797===24.185330791030523++++55.68362941943651  
+[2022-07-11 20:11:03] local.DEBUG: 17797===24.185330791028424++++55.68362941943597  
+[2022-07-11 20:11:04] local.DEBUG: 17797===24.185330791024953++++55.683629419435086  
+[2022-07-11 20:11:05] local.DEBUG: 17797===24.185330791022515++++55.68362941943446  
+[2022-07-11 20:11:06] local.DEBUG: 17797===24.185330791024636++++55.683629419435  
+[2022-07-11 20:11:08] local.DEBUG: 17797===24.18533079102282++++55.68362941943454  
+[2022-07-11 20:11:08] local.DEBUG: 17797===24.18533079102127++++55.68362941943415  
+[2022-07-11 20:11:09] local.DEBUG: 17797===24.18533079102123++++55.68362941943413  
+[2022-07-11 20:11:10] local.DEBUG: 17797===24.185330791030818++++55.68362941943658  
+[2022-07-11 20:11:11] local.DEBUG: 17797===24.185330791020952++++55.68362941943406  
+[2022-07-11 20:11:13] local.DEBUG: 17797===24.185330791032676++++55.683629419437054  
+[2022-07-11 20:11:13] local.DEBUG: 17797===24.185330791033785++++55.68362941943734  
+[2022-07-11 20:11:14] local.DEBUG: 17797===24.185330791025564++++55.68362941943524  
+[2022-07-11 20:11:15] local.DEBUG: 17797===24.18533079102961++++55.68362941943627  
+[2022-07-11 20:11:16] local.DEBUG: 17797===24.18533079102713++++55.68362941943564  
+[2022-07-11 20:11:17] local.DEBUG: 17797===24.18533079103034++++55.68362941943646  
+[2022-07-11 20:11:18] local.DEBUG: 17797===24.185330791027834++++55.68362941943582  
+[2022-07-11 20:11:19] local.DEBUG: 17797===24.185330791026814++++55.68362941943556  
+[2022-07-11 20:11:20] local.DEBUG: 17797===24.185330791026722++++55.68362941943553  
+[2022-07-11 20:11:21] local.DEBUG: 17797===24.18533079102557++++55.68362941943524  
+[2022-07-11 20:11:23] local.DEBUG: 17797===24.18533079102214++++55.68362941943437  
+[2022-07-11 20:11:23] local.DEBUG: 17797===24.185330791029738++++55.68362941943631  
+[2022-07-11 20:11:24] local.DEBUG: 17797===24.185330791021478++++55.6836294194342  
+[2022-07-11 20:11:25] local.DEBUG: 17797===24.185331008752947++++55.68362840506491  
+[2022-07-11 20:11:26] local.DEBUG: 17797===24.1853310415436++++55.683628252303166  
+[2022-07-11 20:11:27] local.DEBUG: 17797===24.185403208948244++++55.6836124272765  
+[2022-07-11 20:11:28] local.DEBUG: 17797===24.185381780084576++++55.68362234282036  
+[2022-07-11 20:11:29] local.DEBUG: 17797===24.185375307439404++++55.68362533788227  
+[2022-07-11 20:11:30] local.DEBUG: 17797===24.185519678616863++++55.68393014806907  
+[2022-07-11 20:11:31] local.DEBUG: 17797===24.18559116655622++++55.68352196120799  
+[2022-07-11 20:11:47] local.DEBUG: 17797===24.185937501097026++++55.683871682210764  
+[2022-07-11 20:11:48] local.DEBUG: 17797===24.185958237732713++++55.683939294170514  
+[2022-07-11 20:11:49] local.DEBUG: 17797===24.18598109612998++++55.68400180674732  
+[2022-07-11 20:11:50] local.DEBUG: 17797===24.186005335511204++++55.68405862608974  
+[2022-07-11 20:11:52] local.DEBUG: 17797===24.186027608031573++++55.68411959653912  
+[2022-07-11 20:11:52] local.DEBUG: 17797===24.186057632854286++++55.68417733482152  
+[2022-07-11 20:11:53] local.DEBUG: 17797===24.186083140545996++++55.684244021744945  
+[2022-07-11 22:12:23] local.DEBUG: Please verify your Phone using code 470051  
+[2022-07-11 22:12:52] local.DEBUG: Mr. Mohammed Your order is proceeded successfully.
+Expect a Call from the restaurant shortly.
+Order Number: 17801
+Total bill is: 63
+Thank You for using Sandwich Map.  
+[2022-07-11 22:12:53] local.DEBUG: Dear Partner You Have One New Order
+Customer name: Mohammed
+Mobile Number: 0567729576
+Total Bill: 63
+Thank you for using Sandwich Map  
+[2022-07-11 22:13:14] local.ERROR: Failed to authenticate on SMTP server with username "noreply@sandwichmap.net" using 2 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code "535", with message "535 Incorrect authentication data
+". Authenticator PLAIN returned Expected response code 235 but got code "535", with message "535 Incorrect authentication data
+". {"exception":"[object] (Swift_TransportException(code: 0): Failed to authenticate on SMTP server with username \"noreply@sandwichmap.net\" using 2 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code \"535\", with message \"535 Incorrect authentication data
+\". Authenticator PLAIN returned Expected response code 235 but got code \"535\", with message \"535 Incorrect authentication data
+\". at /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/AuthHandler.php:191)
+[stacktrace]
+#0 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/EsmtpTransport.php(371): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#1 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php(148): Swift_Transport_EsmtpTransport->doHeloCommand()
+#2 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#3 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(521): Swift_Mailer->send(Object(Swift_Message), Array)
+#4 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(288): Illuminate\\Mail\\Mailer->sendSwiftMessage(Object(Swift_Message))
+#5 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/MailManager.php(550): Illuminate\\Mail\\Mailer->send('EmailTemplates....', Array, Object(Closure))
+#6 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Illuminate\\Mail\\MailManager->__call('send', Array)
+#7 /home/sandwichmap/public_html/app/Http/Controllers/API/HomePageController.php(460): Illuminate\\Support\\Facades\\Facade::__callStatic('send', Array)
+#8 /home/sandwichmap/public_html/app/Http/Controllers/API/HomePageController.php(860): App\\Http\\Controllers\\API\\HomePageController->sendEmail(Object(App\\Order))
+#9 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\API\\HomePageController->SendOrderEmail('17801')
+#10 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('SendOrderEmail', Array)
+#11 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(262): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\API\\HomePageController), 'SendOrderEmail')
+#12 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#13 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(695): Illuminate\\Routing\\Route->run()
+#14 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /home/sandwichmap/public_html/app/Http/Middleware/JsonMiddleware.php(20): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): App\\Http\\Middleware\\JsonMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(63): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#21 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), '60', '1')
+#22 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(697): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#24 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(672): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#25 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(636): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#26 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#27 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#28 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/sandwichmap/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#43 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#44 /home/sandwichmap/public_html/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#45 /home/sandwichmap/public_html/index.php(21): require_once('/home/sandwichm...')
+#46 {main}
+"} 

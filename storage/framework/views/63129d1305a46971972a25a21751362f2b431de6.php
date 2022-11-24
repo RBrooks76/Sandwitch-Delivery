@@ -1,0 +1,1 @@
+<?php echo $Message; ?><?php /**PATH /home/mapstore/public_html/resources/views/EmailTemplates/General.blade.php ENDPATH**/ ?>

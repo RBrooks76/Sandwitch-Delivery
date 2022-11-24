@@ -1,0 +1,756 @@
+@media only screen and (max-width: 767px) {
+  .top-header .left-info {
+    text-align: center;
+  }
+  .top-header .left-info li {
+    font-size: 12px;
+    margin-right: 15px;
+  }
+  .top-header .right-info {
+    text-align: center;
+  }
+  .top-header .right-info li {
+    font-size: 12px;
+    margin-left: 2px;
+  }
+  .top-header .right-info li a i {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 10px;
+  }
+  .top-header .right-info .heder-btn {
+    padding: 10px 15px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .mean-container a.meanmenu-reveal {
+    padding-top: 17px;
+  }
+  .hero-slider .hero-slider-item .slider-content {
+    padding-top: 220px;
+    padding-bottom: 135px;
+  }
+  .hero-slider .hero-slider-item .slider-content h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  .hero-slider .hero-slider-item .slider-content span {
+    font-size: 12px;
+  }
+  .hero-slider .hero-slider-item .slider-content span::before {
+    width: 65px;
+  }
+  .hero-slider .hero-slider-item .slider-content p {
+    font-size: 12px;
+  }
+  .hero-slider.owl-theme .owl-dots {
+    left: 50px;
+    right: 50px;
+  }
+  .hero-slider.owl-theme .owl-dots .owl-dot span {
+    width: 30px;
+  }
+  .hero-slider.owl-theme .owl-nav .owl-prev, .hero-slider.owl-theme .owl-nav .owl-next {
+    left: 15px;
+    top: auto;
+    bottom: 45px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+  .hero-slider.owl-theme .owl-nav .owl-next {
+    left: auto;
+    right: 15px;
+  }
+  .low-card {
+    padding: 35px 32px;
+  }
+  .bor-right {
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .about-area .about-image {
+    margin-bottom: 60px;
+  }
+  .about-area .about-text ul li {
+    font-size: 14px;
+  }
+  .low-card h3 {
+    font-size: 18px;
+  }
+  .service-card .service-text {
+    padding: 20px 15px;
+  }
+  .choose-text {
+    padding: 0 15px;
+  }
+  .choose-text .choose-card {
+    padding-left: 70px;
+  }
+  .choose-text .choose-card i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+  }
+  .choose-text .choose-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .choose-text .choose-card p {
+    font-size: 13px;
+  }
+  .choose-img {
+    width: 100%;
+    height: 260px;
+  }
+  .choose-img .video-box .video-btn {
+    margin-left: auto;
+  }
+  .fun-facts-area .fun-facts-shape.top {
+    display: none;
+  }
+  .fun-facts-area .fun-facts-shape.bottom {
+    display: none;
+  }
+  .testimonials-area .section-title span::before {
+    width: 50px;
+  }
+  .testimonials-area .testimonials-slider .testimonials-slider-item .img-text {
+    padding: 20px 15px;
+    max-width: 100%;
+    position: initial;
+    margin-top: 10px;
+  }
+  .testimonials-area .testimonials-slider .testimonials-slider-item .img-text h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .testimonials-area .testimonials-slider .testimonials-slider-item .img-text p {
+    margin-bottom: 5px;
+    font-size: 12px !important;
+  }
+  .testimonials-area .testimonials-slider .testimonials-slider-item .img-text .rating i {
+    font-size: 15px;
+  }
+  .testimonials-area .testimonials-slider .testimonials-slider-item .testimonials-img {
+    max-width: 100%;
+  }
+  .right-way-area .fun-facts-shape.top {
+    display: none;
+  }
+  .right-way .right-way-text {
+    width: 100%;
+    padding: 30px 15px;
+  }
+  .right-way .right-way-text .section-title h2 {
+    font-size: 20px;
+  }
+  .video-contant {
+    height: 265px;
+    position: relative;
+  }
+  .contact-area .section-title {
+    margin: 0 auto 10px;
+  }
+  .contact-area .section-title h2 {
+    font-size: 18px;
+  }
+  .contact-area .contact-text {
+    margin-bottom: 30px;
+  }
+  .attorney-card {
+    text-align: center;
+  }
+  .attorney-card .attorney-card-text {
+    padding: 20px 25px;
+  }
+  .service-area .section-title span::before {
+    width: 50px;
+  }
+  .blog-area .section-title span::before {
+    width: 50px;
+  }
+  .service-card .service-text {
+    text-align: center;
+  }
+  .blog-card .blog-card-text {
+    padding: 15px 20px;
+  }
+  .blog-card .blog-card-text h3 {
+    font-size: 20px;
+  }
+  .attorney-card-text {
+    padding: 20px 25px;
+  }
+  .footer-area .footer-widget p {
+    padding-right: 15px;
+  }
+  .footer-area .footer-widget h3 {
+    margin-bottom: 30px;
+  }
+  .footer-bottom p {
+    padding: 20px 0;
+  }
+  .atron-banner-area {
+    background-image: none;
+    background-color: #183749;
+  }
+  .atron-banner-area .banner.contant .banner-img img {
+    margin-bottom: 30px;
+  }
+  .atron-banner-area .banner.contant .banner-text span {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .atron-banner-area .banner.contant .banner-text h1 {
+    font-size: 33px;
+    margin-bottom: 10px;
+  }
+  .about-area-two .about-progress {
+    padding: 35px 20px;
+    margin-bottom: 30px;
+  }
+  .about-area-two .about-progress h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+  .about-area-two .about-progress .progress-contant h3 {
+    font-size: 15px;
+  }
+  .atron-banner-area {
+    background-position: right;
+  }
+  .atron-banner-area .banner-text {
+    max-width: 436px;
+  }
+  .hero-slider.hero-slider-two .hero-slider-item .slider-content .slider-image img {
+    position: inherit;
+    margin-top: 30px;
+    margin: 30px auto 0;
+  }
+  .low-card-area-two .low-card-contant {
+    top: -20px;
+  }
+  .low-card-area-two .low-card-contant .low-card-two {
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0px 0px 20px #eeeeee;
+            box-shadow: 0px 0px 20px #eeeeee;
+  }
+  .low-card-area-two .low-card-contant .low-card-two p {
+    margin-bottom: 0;
+  }
+  .page-banner .page-content {
+    padding-top: 150px;
+  }
+  .faq-area .contact-form {
+    padding: 30px 20px;
+  }
+  .faq-accordion {
+    margin-bottom: 30px;
+  }
+  .sign-in-area .sign-in-form {
+    padding: 40px 20px;
+  }
+  .sign-up-area .sign-up-form {
+    padding: 40px 20px;
+  }
+  .coming-soon-area {
+    height: 100%;
+  }
+  .coming-soon-area .coming-soon-contant h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  .coming-soon-area .coming-soon-contant p {
+    font-size: 13px;
+  }
+  .coming-soon-area .coming-soon-contant #timer {
+    margin-top: 20px;
+  }
+  .coming-soon-area .coming-soon-contant #timer div {
+    margin: auto;
+  }
+  .coming-soon-area .coming-soon-contant #timer div span {
+    font-size: 20px;
+  }
+  .coming-soon-area .coming-soon-contant .coming-soon-form .form-control {
+    height: 50px;
+    width: 100%;
+    font-size: 12px;
+  }
+  .coming-soon-area .coming-soon-contant .coming-soon-form .form-btn {
+    padding: 17px 20px;
+    font-size: 10px;
+    right: 0;
+  }
+  .case-details-tab .case-details-tab-item h2 {
+    font-size: 30px;
+  }
+  .case-details-tab .case-details-tab-item .nav-pills .nav-link {
+    width: 90px;
+    margin-right: 5px;
+    font-size: 12px;
+    padding: 10px 0;
+  }
+  .case-details-tab .case-details-tab-item .tab-content p {
+    margin-bottom: 30px;
+  }
+  .attor-details-item .attor-details-left {
+    padding: 0 20px 40px 20px;
+  }
+  .attor-details-item .attor-details-left .attor-work .attor-work-left ul li:before {
+    width: 35px;
+    right: -50px;
+  }
+  .attor-details-item .attor-details-left .attor-work .attor-work-right {
+    margin-left: 55px;
+  }
+  .attor-details-item .attor-details-right .attor-details-name {
+    margin-bottom: 25px;
+  }
+  .attor-details-item .attor-details-right .attor-details-name h2 {
+    font-size: 25px;
+  }
+  .services-details .article-footer .article-tags {
+    max-width: 100%;
+    display: inherit;
+    text-align: center;
+  }
+  .services-details .article-footer .article-tags span {
+    top: 0;
+    font-size: 15px;
+  }
+  .services-details .article-footer .article-share {
+    max-width: 100%;
+    margin-top: 15px;
+  }
+  .services-details .article-footer .article-share .social {
+    text-align: center;
+    width: 200px;
+  }
+  .services-details .article-footer .article-share .social .social li {
+    display: inline-block;
+  }
+  .services-details .comment-respond .comment-form {
+    margin-bottom: 30px;
+  }
+  .pt-100 {
+    padding-top: 50px;
+  }
+  .ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .pb-70 {
+    padding-bottom: 20px;
+  }
+  .pb-100 {
+    padding-bottom: 50px;
+  }
+  .section-title {
+    margin: 0 auto 30px;
+  }
+  .section-title span {
+    font-size: 13px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+  .section-title h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .section-title h2 span {
+    font-size: 28px;
+  }
+  .section-title p {
+    font-size: 13px;
+  }
+  .default-btn-one {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+  .default-btn-two {
+    padding: 9px 15px;
+    font-size: 12px;
+  }
+  .navbar-area {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  .service-card .service-text h3 a {
+    font-size: 18px;
+  }
+  .our-service-card h3 {
+    font-size: 18px;
+  }
+  .choose-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .page-banner .page-content h2 {
+    font-size: 25px;
+  }
+  .page-banner .page-content ul li {
+    font-size: 14px;
+  }
+  .attor-details-right {
+    margin-top: 30px;
+  }
+  .faq-area .contact-form .section-title {
+    margin: 0px 0 30px;
+  }
+  .faq-area .contact-form .section-title h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .contact-card span {
+    font-size: 15px;
+    position: relative;
+  }
+  .contact-card h3 a {
+    font-size: 18px;
+  }
+  .mean-container .mean-nav ul li .nav-link.search-box i {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .top-header .left-info li {
+    margin-right: 5px;
+    font-size: 11px;
+  }
+  .top-header .left-info li a i {
+    font-size: 15px;
+    top: 1px;
+  }
+  .top-header .right-info .heder-btn {
+    margin-top: 0;
+  }
+  .hero-slider.owl-theme .owl-dots .owl-dot span {
+    width: 60px;
+  }
+  .hero-slider.owl-theme .owl-nav .owl-prev, .hero-slider.owl-theme .owl-nav .owl-next {
+    left: 35px;
+  }
+  .hero-slider.owl-theme .owl-nav .owl-next {
+    left: auto;
+    right: 35px;
+  }
+  .signle-fun-fact {
+    padding: 40px 40px;
+  }
+  .blog-card {
+    text-align: center;
+  }
+  .blog-card .blog-card-text h3 {
+    font-size: 18px;
+  }
+  .bor-right:last-child {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .testimonials-area .testimonials-slider .testimonials-slider-item .img-text {
+    position: absolute;
+    padding: 30px 35px;
+    bottom: 0;
+    max-width: 340px;
+  }
+  .testimonials-area .testimonials-slider .testimonials-slider-item .img-text h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .testimonials-area .testimonials-slider .testimonials-slider-item .img-text p {
+    font-size: 14px;
+  }
+  .testimonials-area .testimonials-slider .testimonials-slider-item .testimonials-img {
+    max-width: 280px;
+  }
+  .low-card-two {
+    padding: 25px 20px;
+  }
+  .low-card-two p {
+    margin-bottom: 0;
+  }
+  .faq-area .contact-form {
+    padding: 30px 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .top-header .right-info li {
+    font-size: 12px;
+  }
+  .top-header .right-info .heder-btn {
+    margin-left: 20px;
+  }
+  .mean-container a.meanmenu-reveal {
+    padding-top: 17px;
+  }
+  .mean-container .mean-nav ul li .nav-link.search-box i {
+    display: inline-block;
+  }
+  .hero-slider .hero-slider-item .slider-content {
+    padding-top: 200px;
+  }
+  .hero-slider.owl-theme .owl-dots .owl-dot span {
+    width: 80px;
+  }
+  .hero-slider.owl-theme .owl-nav .owl-prev, .hero-slider.owl-theme .owl-nav .owl-next {
+    left: 40px;
+    top: auto;
+    bottom: 80px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+  .hero-slider.owl-theme .owl-nav .owl-next {
+    left: auto;
+    right: 40px;
+  }
+  .choose-card {
+    margin-left: 30px;
+  }
+  .choose-img {
+    width: 100%;
+    height: 350px;
+  }
+  .choose-img .video-box .video-btn {
+    margin-left: auto;
+  }
+  .right-way .right-way-text {
+    width: 100%;
+  }
+  .video-contant {
+    height: 350px;
+    position: relative;
+  }
+  .attorney-card .attorney-card-text {
+    padding: 30px 40px;
+  }
+  .blog-card .blog-card-text h3 {
+    font-size: 20px;
+  }
+  .bor-right {
+    border-right: none;
+  }
+  .about-text {
+    margin-top: 30px;
+  }
+  .contact-text {
+    margin-bottom: 30px;
+  }
+  .atron-banner-area {
+    background-image: none;
+    background-color: #0f3041;
+  }
+  .atron-banner-area .banner.contant .banner-img img {
+    margin-bottom: 30px;
+  }
+  .atron-banner-area .banner-text {
+    max-width: 545px;
+  }
+  .fun-facts-shape.top {
+    display: none;
+  }
+  .fun-facts-shape.bottom {
+    display: none;
+  }
+  .choose-card {
+    margin-left: 0;
+  }
+  .right-way-two {
+    margin-bottom: 30px;
+  }
+  .about-area-two .about-text .section-title h2 {
+    margin-bottom: 15px;
+  }
+  .about-area-two .about-text .section-title span {
+    font-size: 30px;
+  }
+  .section-title h2 {
+    font-size: 30px;
+  }
+  .hero-slider.hero-slider-two .hero-slider-item .slider-content .slider-image img {
+    position: inherit;
+    margin-top: 30px;
+    margin: 30px auto 0;
+  }
+  .low-card-area-two .low-card-contant {
+    top: -20px;
+  }
+  .low-card-area-two .low-card-contant .low-card-two {
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0px 0px 20px #eeeeee;
+            box-shadow: 0px 0px 20px #eeeeee;
+  }
+  .low-card-area-two .low-card-contant .low-card-two p {
+    margin-bottom: 0;
+  }
+  .services-details .article-footer .article-tags span {
+    font-size: 15px;
+  }
+  .services-details .article-footer .article-tags a {
+    font-size: 13px;
+  }
+  .services-details .article-footer .article-share .social li span {
+    font-size: 14px;
+  }
+  .services-details .article-footer .article-share .social li a {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+  }
+  .services-details .article-footer .article-share .social li a i {
+    bottom: 0;
+  }
+  .pb-70 {
+    padding-bottom: 40px;
+  }
+  .pt-100 {
+    padding-top: 70px;
+  }
+  .ptb-100 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .low-card {
+    border-bottom: 1px solid #eee;
+  }
+  .choose-area .choose-text {
+    max-width: 555px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .testimonials-area .testimonials-slider .testimonials-slider-item .testimonials-img {
+    max-width: 375px;
+  }
+  .testimonials-area .testimonials-slider .testimonials-slider-item .img-text {
+    bottom: auto !important;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .attor-details-right {
+    margin-top: 30px;
+  }
+  .faq-area .contact-form {
+    padding: 50px 40px;
+  }
+  .faq-area .contact-form .section-title {
+    margin: 0px 0 30px;
+  }
+  .faq-area .contact-form .section-title h2 {
+    text-align: center;
+  }
+  .attor-details-item .attor-details-right .attor-details-name h2 {
+    font-size: 25px;
+  }
+  .about-area .about-image {
+    text-align: center;
+  }
+  .pb-100 {
+    padding-bottom: 50px;
+  }
+  .case-details-item img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .atorn-nav .navbar .navbar-nav .nav-item {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .hero-slider .hero-slider-item .slider-content {
+    padding-top: 230px;
+    max-width: 680px;
+    text-align: center;
+    margin: auto;
+  }
+  .hero-slider.owl-theme .owl-dots .owl-dot span {
+    width: 80px;
+  }
+  .low-card {
+    padding: 20px 15px;
+  }
+  .low-card h3 {
+    font-size: 20px;
+  }
+  .about-area .about-text ul li {
+    font-size: 12px;
+  }
+  .choose-text {
+    padding-left: 40px;
+  }
+  .signle-fun-fact {
+    padding: 40px 30px;
+  }
+  .blog-card .blog-card-text {
+    padding: 20px;
+  }
+  .blog-card .blog-card-text h3 {
+    font-size: 20px;
+  }
+  .service-card .service-text {
+    padding: 20px 15px;
+  }
+  .attorney-card .attorney-card-text {
+    padding: 40px 35px;
+  }
+  .right-way .right-way-text {
+    width: 500px;
+    padding: 40px 25px;
+  }
+  .footer-area .footer-widget .footer-text li {
+    padding-left: 18px;
+  }
+  .footer-area .footer-widget p {
+    font-size: 13px;
+  }
+  .fun-facts-area .fun-facts-shape.top {
+    display: none;
+  }
+  .fun-facts-area .fun-facts-shape.bottom {
+    display: none;
+  }
+  .low-card-area-two .low-card-contant {
+    top: -30px;
+  }
+  .low-card-two {
+    margin-bottom: 70px;
+  }
+  .case-details-tab .case-details-tab-item .nav-pills .nav-link {
+    width: 135px;
+  }
+  .atorn-nav .navbar .navbar-nav .nav-item:nth-last-child(3) .dropdown-menu {
+    left: auto;
+    right: 0;
+  }
+  .testimonials-slider-item.feed-back .testimonials-img {
+    max-width: 240px !important;
+  }
+  .testimonials-slider-item.feed-back .img-text {
+    padding: 15px 15px !important;
+    max-width: 280px !important;
+  }
+  .testimonials-slider-item.feed-back .img-text p {
+    font-size: 12px !important;
+  }
+  .testimonials-slider-item.feed-back .img-text .rating i {
+    font-size: 15px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

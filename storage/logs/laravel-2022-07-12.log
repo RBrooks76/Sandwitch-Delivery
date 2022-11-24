@@ -1,0 +1,266 @@
+[2022-07-12 01:39:37] local.DEBUG: Please verify your Phone using code 361875  
+[2022-07-12 01:39:44] local.DEBUG: Mr. Afra Your order is proceeded successfully.
+Expect a Call from the restaurant shortly.
+Order Number: 17804
+Total bill is: 100
+Thank You for using Sandwich Map.  
+[2022-07-12 01:39:45] local.DEBUG: Dear Partner You Have One New Order
+Customer name: Afra
+Mobile Number: +971523970226
+Total Bill: 100
+Thank you for using Sandwich Map  
+[2022-07-12 01:40:05] local.ERROR: Failed to authenticate on SMTP server with username "noreply@sandwichmap.net" using 2 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code "535", with message "535 Incorrect authentication data
+". Authenticator PLAIN returned Expected response code 235 but got code "535", with message "535 Incorrect authentication data
+". {"exception":"[object] (Swift_TransportException(code: 0): Failed to authenticate on SMTP server with username \"noreply@sandwichmap.net\" using 2 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code \"535\", with message \"535 Incorrect authentication data
+\". Authenticator PLAIN returned Expected response code 235 but got code \"535\", with message \"535 Incorrect authentication data
+\". at /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/AuthHandler.php:191)
+[stacktrace]
+#0 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/EsmtpTransport.php(371): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#1 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php(148): Swift_Transport_EsmtpTransport->doHeloCommand()
+#2 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#3 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(521): Swift_Mailer->send(Object(Swift_Message), Array)
+#4 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(288): Illuminate\\Mail\\Mailer->sendSwiftMessage(Object(Swift_Message))
+#5 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/MailManager.php(550): Illuminate\\Mail\\Mailer->send('EmailTemplates....', Array, Object(Closure))
+#6 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Illuminate\\Mail\\MailManager->__call('send', Array)
+#7 /home/sandwichmap/public_html/app/Http/Controllers/API/HomePageController.php(460): Illuminate\\Support\\Facades\\Facade::__callStatic('send', Array)
+#8 /home/sandwichmap/public_html/app/Http/Controllers/API/HomePageController.php(860): App\\Http\\Controllers\\API\\HomePageController->sendEmail(Object(App\\Order))
+#9 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\API\\HomePageController->SendOrderEmail('17804')
+#10 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('SendOrderEmail', Array)
+#11 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(262): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\API\\HomePageController), 'SendOrderEmail')
+#12 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#13 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(695): Illuminate\\Routing\\Route->run()
+#14 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /home/sandwichmap/public_html/app/Http/Middleware/JsonMiddleware.php(20): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): App\\Http\\Middleware\\JsonMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(63): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#21 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), '60', '1')
+#22 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(697): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#24 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(672): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#25 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(636): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#26 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#27 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#28 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/sandwichmap/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#43 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#44 /home/sandwichmap/public_html/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#45 /home/sandwichmap/public_html/index.php(21): require_once('/home/sandwichm...')
+#46 {main}
+"} 
+[2022-07-12 11:07:54] local.DEBUG: Please verify your Phone using code 764130  
+[2022-07-12 11:08:04] local.DEBUG: Mr. Hamda Your order is proceeded successfully.
+Expect a Call from the restaurant shortly.
+Order Number: 17805
+Total bill is: 78
+Thank You for using Sandwich Map.  
+[2022-07-12 11:08:05] local.DEBUG: Dear Partner You Have One New Order
+Customer name: Hamda
+Mobile Number: 0503557833
+Total Bill: 78
+Thank you for using Sandwich Map  
+[2022-07-12 11:08:37] local.ERROR: Failed to authenticate on SMTP server with username "noreply@sandwichmap.net" using 2 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code "535", with message "535 Incorrect authentication data
+". Authenticator PLAIN returned Expected response code 235 but got code "535", with message "535 Incorrect authentication data
+". {"exception":"[object] (Swift_TransportException(code: 0): Failed to authenticate on SMTP server with username \"noreply@sandwichmap.net\" using 2 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code \"535\", with message \"535 Incorrect authentication data
+\". Authenticator PLAIN returned Expected response code 235 but got code \"535\", with message \"535 Incorrect authentication data
+\". at /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/AuthHandler.php:191)
+[stacktrace]
+#0 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/EsmtpTransport.php(371): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#1 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php(148): Swift_Transport_EsmtpTransport->doHeloCommand()
+#2 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#3 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(521): Swift_Mailer->send(Object(Swift_Message), Array)
+#4 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(288): Illuminate\\Mail\\Mailer->sendSwiftMessage(Object(Swift_Message))
+#5 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/MailManager.php(550): Illuminate\\Mail\\Mailer->send('EmailTemplates....', Array, Object(Closure))
+#6 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Illuminate\\Mail\\MailManager->__call('send', Array)
+#7 /home/sandwichmap/public_html/app/Http/Controllers/API/HomePageController.php(460): Illuminate\\Support\\Facades\\Facade::__callStatic('send', Array)
+#8 /home/sandwichmap/public_html/app/Http/Controllers/API/HomePageController.php(860): App\\Http\\Controllers\\API\\HomePageController->sendEmail(Object(App\\Order))
+#9 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\API\\HomePageController->SendOrderEmail('17805')
+#10 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('SendOrderEmail', Array)
+#11 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(262): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\API\\HomePageController), 'SendOrderEmail')
+#12 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#13 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(695): Illuminate\\Routing\\Route->run()
+#14 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /home/sandwichmap/public_html/app/Http/Middleware/JsonMiddleware.php(20): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): App\\Http\\Middleware\\JsonMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(63): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#21 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), '60', '1')
+#22 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(697): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#24 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(672): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#25 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(636): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#26 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#27 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#28 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/sandwichmap/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#43 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#44 /home/sandwichmap/public_html/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#45 /home/sandwichmap/public_html/index.php(21): require_once('/home/sandwichm...')
+#46 {main}
+"} 
+[2022-07-12 11:13:50] local.DEBUG: Please verify your Phone using code 104837  
+[2022-07-12 11:13:57] local.DEBUG: Mr. Hamda Your order is proceeded successfully.
+Expect a Call from the restaurant shortly.
+Order Number: 17807
+Total bill is: 100
+Thank You for using Sandwich Map.  
+[2022-07-12 11:13:58] local.DEBUG: Dear Partner You Have One New Order
+Customer name: Hamda
+Mobile Number: 0503557833
+Total Bill: 100
+Thank you for using Sandwich Map  
+[2022-07-12 11:14:10] local.ERROR: Failed to authenticate on SMTP server with username "noreply@sandwichmap.net" using 2 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code "535", with message "535 Incorrect authentication data
+". Authenticator PLAIN returned Expected response code 235 but got code "535", with message "535 Incorrect authentication data
+". {"exception":"[object] (Swift_TransportException(code: 0): Failed to authenticate on SMTP server with username \"noreply@sandwichmap.net\" using 2 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code \"535\", with message \"535 Incorrect authentication data
+\". Authenticator PLAIN returned Expected response code 235 but got code \"535\", with message \"535 Incorrect authentication data
+\". at /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/AuthHandler.php:191)
+[stacktrace]
+#0 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/EsmtpTransport.php(371): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#1 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php(148): Swift_Transport_EsmtpTransport->doHeloCommand()
+#2 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#3 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(521): Swift_Mailer->send(Object(Swift_Message), Array)
+#4 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(288): Illuminate\\Mail\\Mailer->sendSwiftMessage(Object(Swift_Message))
+#5 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/MailManager.php(550): Illuminate\\Mail\\Mailer->send('EmailTemplates....', Array, Object(Closure))
+#6 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Illuminate\\Mail\\MailManager->__call('send', Array)
+#7 /home/sandwichmap/public_html/app/Http/Controllers/API/HomePageController.php(460): Illuminate\\Support\\Facades\\Facade::__callStatic('send', Array)
+#8 /home/sandwichmap/public_html/app/Http/Controllers/API/HomePageController.php(860): App\\Http\\Controllers\\API\\HomePageController->sendEmail(Object(App\\Order))
+#9 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\API\\HomePageController->SendOrderEmail('17807')
+#10 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('SendOrderEmail', Array)
+#11 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(262): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\API\\HomePageController), 'SendOrderEmail')
+#12 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#13 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(695): Illuminate\\Routing\\Route->run()
+#14 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /home/sandwichmap/public_html/app/Http/Middleware/JsonMiddleware.php(20): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): App\\Http\\Middleware\\JsonMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(63): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#21 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), '60', '1')
+#22 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(697): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#24 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(672): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#25 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(636): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#26 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#27 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#28 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/sandwichmap/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#43 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#44 /home/sandwichmap/public_html/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#45 /home/sandwichmap/public_html/index.php(21): require_once('/home/sandwichm...')
+#46 {main}
+"} 
+[2022-07-12 18:04:07] local.DEBUG: Please verify your Phone using code 853053  
+[2022-07-12 18:04:31] local.DEBUG: Mr. Saida Your order is proceeded successfully.
+Expect a Call from the restaurant shortly.
+Order Number: 17814
+Total bill is: 170
+Thank You for using Sandwich Map.  
+[2022-07-12 18:04:32] local.DEBUG: Dear Partner You Have One New Order
+Customer name: Saida
+Mobile Number: 0554164457
+Total Bill: 170
+Thank you for using Sandwich Map  
+[2022-07-12 18:04:46] local.ERROR: Failed to authenticate on SMTP server with username "noreply@sandwichmap.net" using 2 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code "535", with message "535 Incorrect authentication data
+". Authenticator PLAIN returned Expected response code 235 but got code "535", with message "535 Incorrect authentication data
+". {"exception":"[object] (Swift_TransportException(code: 0): Failed to authenticate on SMTP server with username \"noreply@sandwichmap.net\" using 2 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code \"535\", with message \"535 Incorrect authentication data
+\". Authenticator PLAIN returned Expected response code 235 but got code \"535\", with message \"535 Incorrect authentication data
+\". at /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/AuthHandler.php:191)
+[stacktrace]
+#0 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/EsmtpTransport.php(371): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#1 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php(148): Swift_Transport_EsmtpTransport->doHeloCommand()
+#2 /home/sandwichmap/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#3 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(521): Swift_Mailer->send(Object(Swift_Message), Array)
+#4 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(288): Illuminate\\Mail\\Mailer->sendSwiftMessage(Object(Swift_Message))
+#5 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Mail/MailManager.php(550): Illuminate\\Mail\\Mailer->send('EmailTemplates....', Array, Object(Closure))
+#6 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Illuminate\\Mail\\MailManager->__call('send', Array)
+#7 /home/sandwichmap/public_html/app/Http/Controllers/API/HomePageController.php(460): Illuminate\\Support\\Facades\\Facade::__callStatic('send', Array)
+#8 /home/sandwichmap/public_html/app/Http/Controllers/API/HomePageController.php(860): App\\Http\\Controllers\\API\\HomePageController->sendEmail(Object(App\\Order))
+#9 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\API\\HomePageController->SendOrderEmail('17814')
+#10 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('SendOrderEmail', Array)
+#11 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(262): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\API\\HomePageController), 'SendOrderEmail')
+#12 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#13 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(695): Illuminate\\Routing\\Route->run()
+#14 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /home/sandwichmap/public_html/app/Http/Middleware/JsonMiddleware.php(20): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): App\\Http\\Middleware\\JsonMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(63): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#21 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), '60', '1')
+#22 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(697): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#24 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(672): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#25 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(636): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#26 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#27 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#28 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/sandwichmap/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#43 /home/sandwichmap/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#44 /home/sandwichmap/public_html/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#45 /home/sandwichmap/public_html/index.php(21): require_once('/home/sandwichm...')
+#46 {main}
+"} 
+[2022-07-12 22:08:23] local.DEBUG: storewide  
+[2022-07-12 22:08:36] local.DEBUG: hassna  
+[2022-07-12 22:55:24] local.DEBUG: Please verify your Phone using code 454807  
+[2022-07-12 22:55:46] local.DEBUG: Please verify your Phone using code 757990  
+[2022-07-12 22:56:12] local.DEBUG: Please verify your Phone using code 840889  
+[2022-07-12 22:56:39] local.DEBUG: Please verify your Phone using code 619154  

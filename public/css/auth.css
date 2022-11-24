@@ -1,0 +1,14 @@
+
+#wpadminbar {
+    color: #ccc;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background: #23282d;
+    z-index: 99999999999999;
+}
+
+
+#wpadminbar .dropdown-menu li a{
+    font-size: 13px;
+}

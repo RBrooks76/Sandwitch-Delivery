@@ -1,0 +1,27 @@
+StartFontMetrics 4.1
+Notice Converted by PHP-font-lib
+Comment https://github.com/PhenX/php-font-lib
+EncodingScheme FontSpecific
+Copyright 
+FontName Flaticon
+FontSubfamily Regular
+UniqueID FontForge 2.0 : Flaticon : 23-7-2019
+FullName Flaticon
+Version Version 001.000 
+PostScriptName Flaticon
+Weight Medium
+ItalicAngle 0
+IsFixedPitch false
+UnderlineThickness 49
+UnderlinePosition -125
+FontHeightOffset 90
+Ascender 875
+Descender -125
+FontBBox 0 -125 1002 875
+StartCharMetrics 7
+U 32 ; WX 391 ; N space ; G 3
+U 61696 ; WX 1000 ; N 001-layers ; G 4
+U 61697 ; WX 1000 ; N 002-design ; G 5
+U 61698 ; WX 1000 ; N 003-speaker ; G 6
+EndCharMetrics
+EndFontMetrics
